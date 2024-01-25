@@ -1,26 +1,17 @@
-import React from 'react';
-import './App.css';
-import Header from './components/header/header.component';
+import "./App.css";
+import Navigation from "./components/navigation/navigation.component";
+import { Route, Routes } from "react-router-dom";
+import AboutMe from "./components/home/home.component";
 
 function App() {
   return (
-    <Header />
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.tsx</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
+    <>
+      <Navigation />
+      <Routes>
+        <Route index element={<AboutMe />} />
+        {/* <Route path="*" element={<PageNotFound />}/>*/}
+      </Routes>
+    </>
   );
 }
 
