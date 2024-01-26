@@ -1,3 +1,7 @@
 {
-    "home": "Home"
+    "navigation.contact": "Contact",
+    "navigation.experience": "Experience",
+    "navigation.home": "Home",
+    "navigation.projects": "Projects",
+    "navigation.skills": "Skills"
 }

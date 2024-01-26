@@ -1,16 +1,22 @@
 import "./App.css";
-import Navigation from "./components/navigation/navigation.component";
-import { Route, Routes } from "react-router-dom";
-import AboutMe from "./components/home/home.component";
+import Home from "./components/home/home.component";
+import LightEffect from "./components/light-effect/light-effect.component";
 
 function App() {
+  document.addEventListener("mousemove", (e) => {
+    document.documentElement.style.setProperty(
+      "--tw-light-x",
+      `${e.clientX}px`
+    );
+    document.documentElement.style.setProperty(
+      "--tw-light-y",
+      `${e.clientY}px`
+    );
+  });
   return (
     <>
-      <Navigation />
-      <Routes>
-        <Route index element={<AboutMe />} />
-        {/* <Route path="*" element={<PageNotFound />}/>*/}
-      </Routes>
+      <LightEffect />
+      <Home></Home>
     </>
   );
 }

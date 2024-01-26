@@ -6,12 +6,12 @@ const Header = () => {
   const { t } = useTranslation();
   return (
     <>
-      <Link to="/">{t("home")}</Link>
-      <Link to="/experience">Experience</Link>
-      <Link to="/skills">Skills</Link>
-      <Link to="/contact">Contact</Link>
-      <Link to="/projects">Projects</Link>
-      <LanguageSwitcher />
+      <Link to="/">{t("navigation.home")}</Link>
+      <Link to="/experience">{t("navigation.experience")}</Link>
+      <Link to="/skills">{t("navigation.skills")}</Link>
+      <Link to="/contact">{t("navigation.contact")}</Link>
+      <Link to="/projects">{t("navigation.projects")}</Link>
+      {/* <LanguageSwitcher /> */}
     </>
   );
 };

@@ -1,8 +1,11 @@
+import { SplitLayout } from "./home.styles";
+
 const Home = () => {
   return (
-    <div>
-      <p>skelleton</p>
-    </div>
+    <SplitLayout>
+      {/* <LeftSide />
+      <RightSide /> */}
+    </SplitLayout>
   );
 };
 
