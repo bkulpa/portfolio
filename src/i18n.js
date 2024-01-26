@@ -11,11 +11,15 @@ i18n
     supportedLngs: ["en", "pl"],
     fallbackLng: "en",
     detection: {
-      order: ["cookie", "htmlTag", "localStorage", "path", "subdomain"],
+      order: ["path", "cookie", "htmlTag"],
       caches: ["cookie"],
     },
     backend: {
-      loadPath: "../languages{{lng}}",
+      // Ścieżka do załadowania tłumaczeń, `public` jest dostępne pod adresem '/'
+      loadPath: "/languages/{{lng}}.json",
+    },
+    react: {
+      useSuspense: false,
     },
   });
 
