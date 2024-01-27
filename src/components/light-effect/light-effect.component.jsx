@@ -6,7 +6,8 @@ const LightEffect = () => {
       const light = document.getElementById("light");
       const x = e.pageX;
       const y = e.pageY;
-      light.style.transform = `translate(${x - 100}px, ${y - 100}px)`;
+      light.style.setProperty("--x", `${x}px`);
+      light.style.setProperty("--y", `${y}px`);
     };
 
     // Dodanie nasłuchiwania zdarzenia
