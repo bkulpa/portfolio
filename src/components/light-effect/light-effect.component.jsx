@@ -3,14 +3,13 @@ import { useEffect } from "react";
 const LightEffect = () => {
   useEffect(() => {
     const handleMouseMove = (e) => {
-      const light = document.getElementById("light");
-      const x = e.pageX;
-      const y = e.pageY;
-      light.style.setProperty("--x", `${x}px`);
-      light.style.setProperty("--y", `${y}px`);
+      const light = document.querySelector(".light-effect");
+      const x = e.clientX;
+      const y = e.clientY;
+      light.style.left = `${x}px`;
+      light.style.top = `${y}px`;
     };
 
-    // Dodanie nasłuchiwania zdarzenia
     document.addEventListener("mousemove", handleMouseMove);
 
     // Oczyszczenie nasłuchiwania zdarzenia

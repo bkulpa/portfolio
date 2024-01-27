@@ -1,11 +1,11 @@
-import { SplitLayout } from "./home.styles";
+import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 
 const Home = () => {
   return (
-    <SplitLayout>
-      {/* <LeftSide />
-      <RightSide /> */}
-    </SplitLayout>
+    <SplitContainer>
+      <LeftContainer>dupa</LeftContainer>
+      <RightContainer>cipa</RightContainer>
+    </SplitContainer>
   );
 };
 
