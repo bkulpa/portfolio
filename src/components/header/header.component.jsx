@@ -13,6 +13,10 @@ const Header = () => {
       <div style={{ maxWidth: "320px", marginTop: "16px" }}>
         <StyledP>{t("home.jobTitleDescription")}</StyledP>
       </div>
+
+      <div className="test1">test1</div>
+      <div className="test2">test2</div>
+      <div className="test3">test3</div>
     </>
   );
 };
