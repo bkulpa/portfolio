@@ -6,7 +6,7 @@ const Home = () => {
       <LeftContainer>
         <Header />
       </LeftContainer>
-      <RightContainer>cipa</RightContainer>
+      <RightContainer>right side</RightContainer>
     </SplitContainer>
   );
 };

@@ -16,7 +16,6 @@ export const LeftContainer = styled.div`
   min-width: 329.5px;
   overflow: hidden;
   padding: 0;
-  background-color: yellow;
 `;
 
 export const RightContainer = styled.div`
@@ -25,5 +24,4 @@ export const RightContainer = styled.div`
   min-width: 329.5px;
   overflow-y: auto;
   padding: 0;
-  background-color: red;
 `;
