@@ -1,9 +1,11 @@
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
-
+import Header from "../header/header.component";
 const Home = () => {
   return (
     <SplitContainer>
-      <LeftContainer>dupa</LeftContainer>
+      <LeftContainer>
+        <Header />
+      </LeftContainer>
       <RightContainer>cipa</RightContainer>
     </SplitContainer>
   );

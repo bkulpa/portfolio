@@ -19,7 +19,7 @@ i18n
       loadPath: "/languages/{{lng}}.json",
     },
     react: {
-      useSuspense: false,
+      useSuspense: true,
     },
   });
 
