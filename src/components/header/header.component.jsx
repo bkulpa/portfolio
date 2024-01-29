@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { useSelector } from "react-redux";
 
+import Menu from "../menu/menu.component";
 import StyledH1 from "../styled-h-tags/styled-h1/styled-h1.styles";
 import StyledH2 from "../styled-h-tags/styled-h2/styled-h2.styles";
-import StyledP from "../styled-p-tag/styled-p.component";
+import StyledP from "../styled-p-tag/styled-p.styles";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -17,8 +18,8 @@ const Header = () => {
       <div style={{ maxWidth: "320px", marginTop: "16px" }}>
         <StyledP>{t("home.jobTitleDescription")}</StyledP>
       </div>
-
-      <div
+      <Menu />
+      {/* <div
         className="test1"
         style={{ backgroundColor: isTest2aVisible ? "red" : "initial" }}
       >
@@ -30,7 +31,7 @@ const Header = () => {
       >
         test2
       </div>
-      <div className="test3">test3</div>
+      <div className="test3">test3</div> */}
     </>
   );
 };
