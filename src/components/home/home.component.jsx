@@ -1,4 +1,4 @@
-import FindMenuSection from "./functions/find-menu-section";
+import FindMenuSection from "../../functions/find-menu-section";
 
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 
