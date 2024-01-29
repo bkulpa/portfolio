@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { useSelector } from "react-redux";
 
 import StyledH1 from "../styled-h-tags/styled-h1/styled-h1.styles";
 import StyledH2 from "../styled-h-tags/styled-h2/styled-h2.styles";
@@ -6,6 +7,9 @@ import StyledP from "../styled-p-tag/styled-p.component";
 
 const Header = () => {
   const { t } = useTranslation();
+  const isTest2aVisible = useSelector(
+    (state) => state.visibility.isTest2aVisible
+  );
   return (
     <>
       <StyledH1>{t("home.nameAndSurname")}</StyledH1>
@@ -14,8 +18,18 @@ const Header = () => {
         <StyledP>{t("home.jobTitleDescription")}</StyledP>
       </div>
 
-      <div className="test1">test1</div>
-      <div className="test2">test2</div>
+      <div
+        className="test1"
+        style={{ backgroundColor: isTest2aVisible ? "red" : "initial" }}
+      >
+        test1
+      </div>
+      <div
+        className="test2"
+        style={{ backgroundColor: isTest2aVisible ? "red" : "initial" }}
+      >
+        test2
+      </div>
       <div className="test3">test3</div>
     </>
   );
