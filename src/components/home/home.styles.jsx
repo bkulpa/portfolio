@@ -24,4 +24,9 @@ export const RightContainer = styled.div`
   min-width: 329.5px;
   overflow-y: auto;
   padding: 0;
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+  scrollbar-width: none;
 `;
