@@ -2,37 +2,15 @@ import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setVisibility } from "../../store/visibility/visibility.reducer";
 
+import FindMenuSection from "./functions/find-menu-section";
+
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 
 import Header from "../header/header.component";
 
 const Home = () => {
-  const test2aRef = useRef();
-  const dispatch = useDispatch();
+  const findMenuSection = FindMenuSection();
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        dispatch(setVisibility(entry.isIntersecting));
-      },
-      {
-        // TODO: Znaleźć optimum, wartość threshold ustawić na około 0.7
-        root: null,
-        rootMargin: "-33% 0px -33% 0px",
-        threshold: 0.1,
-      }
-    );
-
-    if (test2aRef.current) {
-      observer.observe(test2aRef.current);
-    }
-
-    return () => {
-      if (test2aRef.current) {
-        observer.unobserve(test2aRef.current);
-      }
-    };
-  }, [dispatch, test2aRef]);
   return (
     <SplitContainer>
       <LeftContainer>
@@ -51,7 +29,7 @@ const Home = () => {
           including versions of Lorem Ipsum.
         </div>
         <br />
-        <div className="test2a" ref={test2aRef} style={{ width: "50px" }}>
+        <div className="test2a" ref={findMenuSection} style={{ width: "50px" }}>
           JAPPA Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever
           since the
