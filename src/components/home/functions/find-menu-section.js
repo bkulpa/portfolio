@@ -12,8 +12,9 @@ const FindMenuSection = () => {
         dispatch(setVisibility(entry.isIntersecting));
       },
       {
-        root: null,
-        rootMargin: "-33% 0px -33% 0px",
+        // TODO: Uncomment this place
+        // root: null,
+        // rootMargin: "-33% 0px -33% 0px",
         threshold: 0.1,
       }
     );
