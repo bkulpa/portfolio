@@ -24,6 +24,7 @@ const FindMenuSection = () => {
 
     return () => {
       if (findMenuSectionRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(findMenuSectionRef.current);
       }
     };

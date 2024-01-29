@@ -1,7 +1,3 @@
-import { useEffect, useRef } from "react";
-import { useDispatch } from "react-redux";
-import { setVisibility } from "../../store/visibility/visibility.reducer";
-
 import FindMenuSection from "./functions/find-menu-section";
 
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
