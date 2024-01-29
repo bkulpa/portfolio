@@ -7,7 +7,6 @@ import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import Header from "../header/header.component";
 
 const Home = () => {
-  // const [isTest2aVisible, setIsTest2aVisible] = useState(false);
   const test2aRef = useRef();
   const dispatch = useDispatch();
 
