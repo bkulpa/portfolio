@@ -4,13 +4,14 @@ import { useTranslation } from "react-i18next";
 import { MenuList, MenuElement } from "./menu.styled";
 
 const Menu = () => {
+  const { t } = useTranslation();
   const isMenuSectionOnTheScreen = useSelector(
     (state) => state.visibility.isMenuSectionOnTheScreen
   );
 
   return (
     <MenuList>
-      <MenuElement>menu1</MenuElement>
+      <MenuElement>{t("menu.about")}</MenuElement>
       <MenuElement
         style={{
           color: isMenuSectionOnTheScreen
@@ -18,10 +19,10 @@ const Menu = () => {
             : "rgb(148, 163, 184)",
         }}
       >
-        menu2
+        {t("menu.experience")}
       </MenuElement>
-      <MenuElement>menu3</MenuElement>
-      <MenuElement>menu4</MenuElement>
+      <MenuElement>{t("menu.courses")}</MenuElement>
+      <MenuElement>{t("menu.projects")}</MenuElement>
     </MenuList>
   );
 };
