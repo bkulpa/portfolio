@@ -1,19 +1,17 @@
 {
-    "home.aboutMe.part-1": "I am a Frontend Developer with one year of experience, specialising in <span class='highlight__about'>JavaScript</span>, <span class='highlight__about'>React.js</span>, <span class='highlight__about'>HTML</span>, and <span class='highlight__about'>CSS</span>. My skill set includes effective management of application state using <span class='highlight__about'>Redux</span>. I excel in designing responsive user interfaces, emphasising both aesthetics and efficiency.",
-    "home.aboutMe.part-2": "I possess proficiency in <span class='highlight__about'>SQL</span> and have hands-on experience with <span class='highlight__about'>Databases</span>, equipping me to manage data efficiently. As a results-driven programmer, I am ready for continuous growth and eager to embrace new challenges in <span class='highlight__about'>Frontend development</span>.",
-    "home.aboutMe.part-3": "Outside of my computer work, I'm deeply passionate about <span class='highlight__about'>Brazilian Jiu-Jitsu</span>. This martial art perfectly blends artistic skill with the thrill of strategic combat.",
-    "home.jobTitleDescription": "I build pixel-perfect, engaging, and accessible digital experiences.",
-    "home.jobTitle": "Junior Frontend Developer",
-    "home.nameAndSurname": "Bartosz Kulpa",
-    "menu.about": "ABOUT",
-    "menu.courses": "COURSES",
-    "menu.experience": "EXPERIENCE",
-    "menu.projects": "PROJECTS",
-    "navigation.contact": "Contact",
-    "navigation.experience": "Experience",
-    "navigation.home": "Home",
-    "navigation.projects": "Projects",
-    "navigation.skills": "Skills"
+  "home.aboutMe.part-1": "I am a Frontend Developer with one year of experience, specialising in <span class='highlight__about'>JavaScript</span>, <span class='highlight__about'>React.js</span>, <span class='highlight__about'>HTML</span>, and <span class='highlight__about'>CSS</span>. My skill set includes effective management of application state using <span class='highlight__about'>Redux</span>. I excel in designing responsive user interfaces, emphasising both aesthetics and efficiency.",
+  "home.aboutMe.part-2": "I possess proficiency in <span class='highlight__about'>SQL</span> and have hands-on experience with <span class='highlight__about'>Databases</span>, equipping me to manage data efficiently. As a results-driven programmer, I am ready for continuous growth and eager to embrace new challenges in <span class='highlight__about'>Frontend development</span>.",
+  "home.aboutMe.part-3": "Outside of my computer work, I'm deeply passionate about <span class='highlight__about'>Brazilian Jiu-Jitsu</span>. This martial art perfectly blends artistic skill with the thrill of strategic combat.",
+  "home.jobTitleDescription": "I build pixel-perfect, engaging, and accessible digital experiences.",
+  "home.jobTitle": "Junior Frontend Developer",
+  "home.nameAndSurname": "Bartosz Kulpa",
+  "menu.about": "ABOUT",
+  "menu.courses": "COURSES",
+  "menu.experience": "EXPERIENCE",
+  "menu.projects": "PROJECTS",
+  "navigation.contact": "Contact",
+  "navigation.experience": "Experience",
+  "navigation.home": "Home",
+  "navigation.projects": "Projects",
+  "navigation.skills": "Skills"
 }
-
-

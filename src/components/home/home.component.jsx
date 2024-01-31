@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 
-import MenuSectionFinder from "../../functions/menu-section-finder/menu-section-finder";
+import MenuSectionFinder from "../../functions/menu-section-finder";
 
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import StyledP from "../styled-p-tag/styled-p.styles";
