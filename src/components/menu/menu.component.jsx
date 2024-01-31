@@ -15,6 +15,8 @@ const Menu = () => {
       : "rgb(148, 163, 184)",
   };
 
+  // TODO: I need to add styles for MenuElements,
+  //  CSS should be active also in hover
   return (
     <MenuList>
       <MenuElement style={foundedMenuSectionStyle}>
