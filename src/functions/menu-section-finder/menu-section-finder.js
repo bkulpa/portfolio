@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setVisibility } from "../store/visibility/visibility.reducer";
+import { setVisibility } from "../../store/visibility/visibility.reducer";
 
-const FindMenuSection = () => {
+const MenuSectionFinder = () => {
   const findMenuSectionRef = useRef();
   const dispatch = useDispatch();
 
@@ -34,4 +34,4 @@ const FindMenuSection = () => {
   return findMenuSectionRef;
 };
 
-export default FindMenuSection;
+export default MenuSectionFinder;

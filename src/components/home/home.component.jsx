@@ -1,11 +1,11 @@
-import FindMenuSection from "../../functions/find-menu-section";
+import MenuSectionFinder from "../../functions/menu-section-finder/menu-section-finder";
 
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 
 import Header from "../header/header.component";
 
 const Home = () => {
-  const findMenuSection = FindMenuSection();
+  const findMenuSection = MenuSectionFinder();
 
   return (
     <SplitContainer>
