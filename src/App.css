@@ -16,3 +16,8 @@ body {
    fixed inset-0 z-30 transition duration-300 lg:absolute"
   style="background: radial-gradient(600px at 1002px 292px, rgba(29, 78, 216, 0.15), transparent 80%);"
 } */
+
+.highlight__about {
+  color: rgb(215, 223, 238);
+  font-weight: bold;
+}

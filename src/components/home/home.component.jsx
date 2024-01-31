@@ -18,9 +18,16 @@ const Home = () => {
       </LeftContainer>
       <RightContainer>
         <div style={{ maxWidth: "528px" }}>
-          <StyledP ref={findMenuSection}>{t("home.aboutMe.part-1")}</StyledP>
-          <StyledP>{t("home.aboutMe.part-2")}</StyledP>
-          <StyledP>{t("home.aboutMe.part-3")}</StyledP>
+          <StyledP
+            ref={findMenuSection}
+            dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-1") }}
+          />
+          <StyledP
+            dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-2") }}
+          />
+          <StyledP
+            dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-3") }}
+          />
         </div>
       </RightContainer>
     </SplitContainer>
