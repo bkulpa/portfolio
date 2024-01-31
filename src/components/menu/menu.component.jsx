@@ -9,16 +9,16 @@ const Menu = () => {
     (state) => state.visibility.isMenuSectionOnTheScreen
   );
 
+  const foundedMenuSectionStyle = {
+    color: isMenuSectionOnTheScreen
+      ? "rgb(215, 223, 238)"
+      : "rgb(148, 163, 184)",
+  };
+
   return (
     <MenuList>
       <MenuElement>{t("menu.about")}</MenuElement>
-      <MenuElement
-        style={{
-          color: isMenuSectionOnTheScreen
-            ? "rgb(215, 223, 238)"
-            : "rgb(148, 163, 184)",
-        }}
-      >
+      <MenuElement style={foundedMenuSectionStyle}>
         {t("menu.experience")}
       </MenuElement>
       <MenuElement>{t("menu.courses")}</MenuElement>
