@@ -17,10 +17,10 @@ const Menu = () => {
 
   return (
     <MenuList>
-      <MenuElement>{t("menu.about")}</MenuElement>
       <MenuElement style={foundedMenuSectionStyle}>
-        {t("menu.experience")}
+        {t("menu.about")}
       </MenuElement>
+      <MenuElement>{t("menu.experience")}</MenuElement>
       <MenuElement>{t("menu.courses")}</MenuElement>
       <MenuElement>{t("menu.projects")}</MenuElement>
     </MenuList>

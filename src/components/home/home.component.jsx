@@ -18,7 +18,7 @@ const Home = () => {
       </LeftContainer>
       <RightContainer>
         <div style={{ maxWidth: "528px" }}>
-          <StyledP>{t("home.aboutMe.part-1")}</StyledP>
+          <StyledP ref={findMenuSection}>{t("home.aboutMe.part-1")}</StyledP>
           <StyledP>{t("home.aboutMe.part-2")}</StyledP>
           <StyledP>{t("home.aboutMe.part-3")}</StyledP>
         </div>
