@@ -18,7 +18,7 @@ const Home = () => {
         <Header />
       </LeftContainer>
       <RightContainer>
-        <div style={{ maxWidth: "528px" }}>
+        <div style={{ maxWidth: "528px", marginBottom: "144px" }}>
           <StyledP
             ref={findMenuSection}
             dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-1") }}
