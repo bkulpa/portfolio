@@ -1,9 +1,9 @@
 import { useTranslation } from "react-i18next";
 
 import Menu from "../menu/menu.component";
-import StyledH1 from "../styled-h-tags/styled-h1/styled-h1.styles";
-import StyledH2 from "../styled-h-tags/styled-h2/styled-h2.styles";
-import StyledP from "../styled-p-tag/styled-p.styles";
+import StyledH1 from "../styled-tags/styled-h1.styles";
+import StyledH2 from "../styled-tags/styled-h2.styles";
+import StyledP from "../styled-tags/styled-p.styles";
 
 const Header = () => {
   const { t } = useTranslation();
