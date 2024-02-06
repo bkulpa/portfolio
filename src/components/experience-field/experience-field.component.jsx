@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import StyledH3 from "../styled-tags/styled-h3.styles";
@@ -8,20 +9,22 @@ import {
 } from "./experience-field.styles";
 import TechStack from "../tech-stack/tech-stack.component";
 
-const ExperienceField = ({
-  cvLink,
-  jobDate,
-  jobDescription,
-  jobTech,
-  jobTitle,
-}) => {
+const ExperienceField = ({ jobDate, jobDescription, jobTech, jobTitle }) => {
   const { t } = useTranslation();
+  const [isHovered, setIsHovered] = useState(false);
   return (
-    <ExperienceFieldMainBox>
+    <ExperienceFieldMainBox
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
       <span>{t(jobDate)}</span>
       <ExperienceDetailsContainer>
         <div>
-          <StyledH3>{t(jobTitle)}</StyledH3>
+          <StyledH3
+            className={`hovered__element ${isHovered ? "on-hover" : ""}`}
+          >
+            {t(jobTitle)}
+          </StyledH3>
         </div>
         <ExperienceFieldDescription>
           {t(jobDescription)}
