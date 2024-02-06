@@ -7,7 +7,6 @@ import StyledP from "../styled-tags/styled-p.styles";
 
 import Header from "../header/header.component";
 import ExperienceField from "../experience-field/experience-field.component";
-import StyledH3 from "../styled-tags/styled-h3.styles";
 import {
   CVLink,
   ExperienceFieldMainBox,
@@ -61,19 +60,33 @@ const Home = () => {
             jobTech={"home.experienceField.jobTech-3"}
           />
           <ExperienceFieldMainBox>
-            <CVLink
-              href="/resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Full Resume
+            <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
+              {t("home.experienceField.resume")}
             </CVLink>
           </ExperienceFieldMainBox>
           <ExperienceField
-            jobDate={"home.experienceField.jobDate-3"}
-            jobDescription={"home.experienceField.jobDescription-3"}
-            jobTitle={"home.experienceField.jobTitle-3"}
-            jobTech={"home.experienceField.jobTech-3"}
+            jobDate={"home.educationField.educationDate-1"}
+            jobDescription={"home.educationField.educationDescription-1"}
+            jobTitle={"home.educationField.educationTitle-1"}
+            jobTech={"home.educationField.educationTech-1"}
+          />
+          <ExperienceField
+            jobDate={"home.educationField.educationDate-2"}
+            jobDescription={"home.educationField.educationDescription-2"}
+            jobTitle={"home.educationField.educationTitle-2"}
+            jobTech={"home.educationField.educationTech-2"}
+          />
+          <ExperienceField
+            jobDate={"home.educationField.educationDate-3"}
+            jobDescription={"home.educationField.educationDescription-3"}
+            jobTitle={"home.educationField.educationTitle-3"}
+            jobTech={"home.educationField.educationTech-3"}
+          />
+          <ExperienceField
+            jobDate={"home.educationField.educationDate-4"}
+            jobDescription={"home.educationField.educationDescription-4"}
+            jobTitle={"home.educationField.educationTitle-4"}
+            jobTech={"home.educationField.educationTech-4"}
           />
         </div>
       </RightContainer>

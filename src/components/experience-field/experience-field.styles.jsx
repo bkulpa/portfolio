@@ -3,7 +3,8 @@ import styled from "styled-components";
 export const CVLink = styled.a`
   color: rgb(226, 232, 240);
   font-size: 16px;
-  margin-top: 10px;
+  margin-bottom: 144px;
+  margin-top: 30px;
   text-decoration: none;
 
   &:hover {
@@ -24,7 +25,6 @@ export const ExperienceFieldMainBox = styled.div`
   right: -24px;
   text-align: left;
   top: -16px;
-  max-width: 576px;
 `;
 
 export const ExperienceFieldDescription = styled.div`
