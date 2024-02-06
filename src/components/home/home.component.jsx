@@ -32,9 +32,16 @@ const Home = () => {
         </div>
         <div>
           <ExperienceField
+            jobDate={"home.experienceField.jobDate-1"}
             jobDescription={"home.experienceField.jobDescription-1"}
             jobTitle={"home.experienceField.jobTitle-1"}
             jobTech={"home.experienceField.jobTech-1"}
+          />
+          <ExperienceField
+            jobDate={"home.experienceField.jobDate-2"}
+            jobDescription={"home.experienceField.jobDescription-2"}
+            jobTitle={"home.experienceField.jobTitle-2"}
+            jobTech={"home.experienceField.jobTech-2"}
           />
         </div>
       </RightContainer>
