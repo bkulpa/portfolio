@@ -16,6 +16,10 @@ const Home = () => {
   const { t } = useTranslation();
   const findMenuSection = MenuSectionFinder();
 
+  const setInnerHTML = (translation) => {
+    return { __html: t(translation) };
+  };
+
   return (
     <SplitContainer>
       <LeftContainer>
@@ -25,13 +29,13 @@ const Home = () => {
         <div style={{ maxWidth: "528px", marginBottom: "144px" }}>
           <StyledP
             ref={findMenuSection}
-            dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-1") }}
+            dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
           />
           <StyledP
-            dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-2") }}
+            dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-2")}
           />
           <StyledP
-            dangerouslySetInnerHTML={{ __html: t("home.aboutMe.part-3") }}
+            dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </div>
         <div>

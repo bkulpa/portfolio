@@ -12,6 +12,11 @@ import TechStack from "../tech-stack/tech-stack.component";
 const ExperienceField = ({ jobDate, jobDescription, jobTech, jobTitle }) => {
   const { t } = useTranslation();
   const [isHovered, setIsHovered] = useState(false);
+
+  const hoveredElementClassChange = `hovered__element ${
+    isHovered ? "on-hover" : ""
+  }`;
+
   return (
     <ExperienceFieldMainBox
       onMouseEnter={() => setIsHovered(true)}
@@ -20,9 +25,7 @@ const ExperienceField = ({ jobDate, jobDescription, jobTech, jobTitle }) => {
       <span>{t(jobDate)}</span>
       <ExperienceDetailsContainer>
         <div>
-          <StyledH3
-            className={`hovered__element ${isHovered ? "on-hover" : ""}`}
-          >
+          <StyledH3 className={hoveredElementClassChange}>
             {t(jobTitle)}
           </StyledH3>
         </div>
