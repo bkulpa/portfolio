@@ -1,5 +1,16 @@
 import styled from "styled-components";
 
+export const CVLink = styled.a`
+  color: rgb(226, 232, 240);
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+
+  &:hover {
+    color: rgb(94, 234, 212);
+  }
+`;
+
 export const ExperienceFieldMainBox = styled.div`
   align-items: baseline;
   bottom: -16px;

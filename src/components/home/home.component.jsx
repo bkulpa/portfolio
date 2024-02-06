@@ -7,6 +7,11 @@ import StyledP from "../styled-tags/styled-p.styles";
 
 import Header from "../header/header.component";
 import ExperienceField from "../experience-field/experience-field.component";
+import StyledH3 from "../styled-tags/styled-h3.styles";
+import {
+  CVLink,
+  ExperienceFieldMainBox,
+} from "../experience-field/experience-field.styles";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -42,6 +47,33 @@ const Home = () => {
             jobDescription={"home.experienceField.jobDescription-2"}
             jobTitle={"home.experienceField.jobTitle-2"}
             jobTech={"home.experienceField.jobTech-2"}
+          />
+          <ExperienceField
+            jobDate={"home.experienceField.jobDate-3"}
+            jobDescription={"home.experienceField.jobDescription-3"}
+            jobTitle={"home.experienceField.jobTitle-3"}
+            jobTech={"home.experienceField.jobTech-3"}
+          />
+          <ExperienceField
+            jobDate={"home.experienceField.jobDate-3"}
+            jobDescription={"home.experienceField.jobDescription-3"}
+            jobTitle={"home.experienceField.jobTitle-3"}
+            jobTech={"home.experienceField.jobTech-3"}
+          />
+          <ExperienceFieldMainBox>
+            <CVLink
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Full Resume
+            </CVLink>
+          </ExperienceFieldMainBox>
+          <ExperienceField
+            jobDate={"home.experienceField.jobDate-3"}
+            jobDescription={"home.experienceField.jobDescription-3"}
+            jobTitle={"home.experienceField.jobTitle-3"}
+            jobTech={"home.experienceField.jobTech-3"}
           />
         </div>
       </RightContainer>

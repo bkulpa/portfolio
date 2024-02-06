@@ -8,7 +8,13 @@ import {
 } from "./experience-field.styles";
 import TechStack from "../tech-stack/tech-stack.component";
 
-const ExperienceField = ({ jobDate, jobDescription, jobTech, jobTitle }) => {
+const ExperienceField = ({
+  cvLink,
+  jobDate,
+  jobDescription,
+  jobTech,
+  jobTitle,
+}) => {
   const { t } = useTranslation();
   return (
     <ExperienceFieldMainBox>
