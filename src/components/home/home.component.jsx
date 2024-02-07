@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 import MenuSectionFinder from "../../functions/menu-section-finder";
 
+import { AboutField } from "../experience-field/experience-field.styles";
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
 
@@ -26,7 +27,7 @@ const Home = () => {
         <Header />
       </LeftContainer>
       <RightContainer>
-        <div style={{ maxWidth: "528px", marginBottom: "144px" }}>
+        <AboutField>
           <StyledP
             ref={findMenuSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
@@ -37,7 +38,7 @@ const Home = () => {
           <StyledP
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
-        </div>
+        </AboutField>
         <div>
           <ExperienceField
             jobDate={"home.experienceField.jobDate-1"}

@@ -19,15 +19,14 @@ export const LeftContainer = styled.div`
 
 export const RightContainer = styled.div`
   flex: 1;
-  max-width: 528px;
+  max-width: 600px;
   min-width: 329.5px;
   overflow-y: auto;
-  /* padding: 0; */
   padding: 85px 0;
   position: sticky;
+  scrollbar-width: none;
 
   ::-webkit-scrollbar {
     display: none;
   }
-  scrollbar-width: none;
 `;
