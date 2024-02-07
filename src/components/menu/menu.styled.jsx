@@ -26,8 +26,9 @@ export const MenuElement = styled.li`
   position: relative;
   padding-left: 48px;
   font-size: 14px;
-  color: rgb(148, 163, 184);
   line-height: 38px;
+  cursor: pointer;
+  transition: padding-left 0.3s ease;
 
   &::before {
     content: "";
@@ -38,11 +39,15 @@ export const MenuElement = styled.li`
     width: 32px;
     height: 1px;
     background: rgb(148, 163, 184);
-    transition: width 0.3s ease, background-color 0.3s ease;
+    transition: width 0.3s ease, background-color 0.3s ease, left 0.3s ease;
+  }
+
+  &:hover {
+    padding-left: 80px;
+    color: rgb(215, 223, 238);
   }
 
   &:hover::before {
     width: 64px;
-    background-color: rgb(215, 223, 238);
   }
 `;
