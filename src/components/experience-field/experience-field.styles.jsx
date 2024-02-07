@@ -21,10 +21,19 @@ export const ExperienceFieldMainBox = styled.div`
   font-weight: bold;
   justify-content: space-between;
   left: -24px;
+  margin-bottom: 48px;
   max-width: 576px;
   right: -24px;
   text-align: left;
   top: -16px;
+
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+
+  &:hover {
+    background-color: #112240;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1); /* Bardziej subtelny cień */
+  }
 `;
 
 export const ExperienceFieldDescription = styled.div`
