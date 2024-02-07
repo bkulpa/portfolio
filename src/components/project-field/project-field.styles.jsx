@@ -1,12 +1,6 @@
 import styled from "styled-components";
 
-export const AboutField = styled.div`
-  margin-bottom: 144px;
-  max-width: 528px;
-  padding-left: 14px;
-`;
-
-export const CVLink = styled.a`
+export const GITHubLink = styled.a`
   color: rgb(226, 232, 240);
   font-size: 16px;
   margin-top: -50px;
@@ -17,7 +11,7 @@ export const CVLink = styled.a`
   }
 `;
 
-export const CVLinkContainer = styled.div`
+export const GITHubLinkContainer = styled.div`
   align-items: baseline;
   bottom: -16px;
   color: rgb(100, 116, 139);
@@ -34,7 +28,28 @@ export const CVLinkContainer = styled.div`
   top: -16px;
 `;
 
-export const ExperienceFieldMainBox = styled.div`
+export const ProjectDetailsContainer = styled.div`
+  max-width: 392px;
+`;
+
+export const ProjectFieldDescription = styled.div`
+  color: rgb(148, 163, 184);
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+`;
+
+export const ProjectImage = styled.img`
+  align-self: flex-start; // Wyrównuje obraz do góry kontenera flex  width: 120px;
+  height: 70px;
+  margin-right: 20px;
+  margin-top: 19px;
+  border-radius: 8px;
+  width: 111px;
+`;
+
+export const ProjectFieldMainBox = styled.div`
   align-items: baseline;
   bottom: -16px;
   color: rgb(100, 116, 139);
@@ -59,14 +74,10 @@ export const ExperienceFieldMainBox = styled.div`
   }
 `;
 
-export const ExperienceFieldDescription = styled.div`
-  color: rgb(148, 163, 184);
-  font-size: 14px;
-  line-height: 21px;
-  margin-bottom: 16px;
-  margin-top: 8px;
-`;
-
-export const ExperienceDetailsContainer = styled.div`
-  max-width: 392px;
+export const ProjectLink = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  color: inherit;
 `;

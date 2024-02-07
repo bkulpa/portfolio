@@ -12,6 +12,7 @@ import {
   CVLink,
   CVLinkContainer,
 } from "../experience-field/experience-field.styles";
+import ProjectField from "../project-field/project-field.component";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -58,17 +59,13 @@ const Home = () => {
             jobTitle={"home.experienceField.jobTitle-3"}
             jobTech={"home.experienceField.jobTech-3"}
           />
-          <ExperienceField
-            jobDate={"home.experienceField.jobDate-3"}
-            jobDescription={"home.experienceField.jobDescription-3"}
-            jobTitle={"home.experienceField.jobTitle-3"}
-            jobTech={"home.experienceField.jobTech-3"}
-          />
           <CVLinkContainer>
             <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
               {t("home.experienceField.resume")}
             </CVLink>
           </CVLinkContainer>
+        </div>
+        <div>
           <ExperienceField
             jobDate={"home.educationField.educationDate-1"}
             jobDescription={"home.educationField.educationDescription-1"}
@@ -92,6 +89,15 @@ const Home = () => {
             jobDescription={"home.educationField.educationDescription-4"}
             jobTitle={"home.educationField.educationTitle-4"}
             jobTech={"home.educationField.educationTech-4"}
+          />
+        </div>
+        <div style={{ marginTop: "144px" }}>
+          <ProjectField
+            projectAltText={"home.projectField.projectAltText-1"}
+            projectDescription={"home.projectField.projectDescription-1"}
+            projectImg={"projects-images/crwn-shop.png"}
+            projectTitle={"home.projectField.projectTitle-1"}
+            projectUrl={"https://animated-halva-e22a2e.netlify.app/"}
           />
         </div>
       </RightContainer>
