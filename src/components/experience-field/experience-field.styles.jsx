@@ -33,6 +33,7 @@ export const CVLinkContainer = styled.div`
   text-align: left;
   top: -16px;
 `;
+
 export const ExperienceFieldMainBox = styled.div`
   align-items: baseline;
   bottom: -16px;

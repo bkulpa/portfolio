@@ -11,7 +11,6 @@ const Navigation = () => {
       <Link to="/skills">{t("navigation.skills")}</Link>
       <Link to="/contact">{t("navigation.contact")}</Link>
       <Link to="/projects">{t("navigation.projects")}</Link>
-      {/* <LanguageSwitcher /> */}
     </>
   );
 };
