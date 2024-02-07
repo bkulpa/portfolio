@@ -9,8 +9,7 @@ export const AboutField = styled.div`
 export const CVLink = styled.a`
   color: rgb(226, 232, 240);
   font-size: 16px;
-  margin-bottom: 144px;
-  margin-top: 30px;
+  margin-top: -50px;
   text-decoration: none;
 
   &:hover {
@@ -18,6 +17,22 @@ export const CVLink = styled.a`
   }
 `;
 
+export const CVLinkContainer = styled.div`
+  align-items: baseline;
+  bottom: -16px;
+  color: rgb(100, 116, 139);
+  display: flex;
+  font-size: 12px;
+  font-weight: bold;
+  justify-content: space-between;
+  left: -24px;
+  margin-bottom: 44px;
+  max-width: 576px;
+  padding: 16px;
+  right: -24px;
+  text-align: left;
+  top: -16px;
+`;
 export const ExperienceFieldMainBox = styled.div`
   align-items: baseline;
   bottom: -16px;
@@ -29,11 +44,10 @@ export const ExperienceFieldMainBox = styled.div`
   left: -24px;
   margin-bottom: 48px;
   max-width: 576px;
+  padding: 16px;
   right: -24px;
   text-align: left;
   top: -16px;
-
-  padding: 16px;
 
   border-radius: 10px;
   transition: box-shadow 0.3s ease;

@@ -10,7 +10,7 @@ import Header from "../header/header.component";
 import ExperienceField from "../experience-field/experience-field.component";
 import {
   CVLink,
-  ExperienceFieldMainBox,
+  CVLinkContainer,
 } from "../experience-field/experience-field.styles";
 
 const Home = () => {
@@ -64,11 +64,11 @@ const Home = () => {
             jobTitle={"home.experienceField.jobTitle-3"}
             jobTech={"home.experienceField.jobTech-3"}
           />
-          <ExperienceFieldMainBox>
+          <CVLinkContainer>
             <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
               {t("home.experienceField.resume")}
             </CVLink>
-          </ExperienceFieldMainBox>
+          </CVLinkContainer>
           <ExperienceField
             jobDate={"home.educationField.educationDate-1"}
             jobDescription={"home.educationField.educationDescription-1"}
