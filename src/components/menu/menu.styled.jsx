@@ -1,19 +1,5 @@
 import styled from "styled-components";
 
-// export const MenuList = styled.ul`
-//   margin-top: 64px;
-//   box-sizing: border-box;
-//   display: block;
-//   tab-size: 4;
-//   font-weight: bold;
-// `;
-
-// export const MenuElement = styled.li`
-//   font-size: 14px;
-//   color: rgb(148, 163, 184);
-//   line-height: 38px;
-// `;
-
 export const MenuList = styled.ul`
   font-weight: bold;
   list-style: none;
@@ -22,9 +8,10 @@ export const MenuList = styled.ul`
 `;
 
 export const MenuElement = styled.li`
-  color: rgb(148, 163, 184);
+  color: ${(props) =>
+    props.isHighlighted ? "rgb(215, 223, 238)" : "rgb(148, 163, 184)"};
   position: relative;
-  padding-left: 48px;
+  padding-left: ${(props) => (props.isHighlighted ? "80px" : "48px")};
   font-size: 14px;
   line-height: 38px;
   cursor: pointer;
@@ -36,7 +23,8 @@ export const MenuElement = styled.li`
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 32px;
+    width: ${(props) =>
+      props.isHighlighted ? "64px" : "32px"}; // Zmiana szerokości kreski
     height: 1px;
     background: rgb(148, 163, 184);
     transition: width 0.3s ease, background-color 0.3s ease, left 0.3s ease;

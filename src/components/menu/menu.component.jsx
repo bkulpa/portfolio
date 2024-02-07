@@ -9,17 +9,9 @@ const Menu = () => {
     (state) => state.visibility.isMenuSectionOnTheScreen
   );
 
-  const foundedMenuSectionStyle = {
-    color: isMenuSectionOnTheScreen
-      ? "rgb(215, 223, 238)"
-      : "rgb(148, 163, 184)",
-  };
-
-  // TODO: I need to add styles for MenuElements,
-  //  CSS should be active also in hover
   return (
     <MenuList>
-      <MenuElement style={foundedMenuSectionStyle}>
+      <MenuElement isHighlighted={isMenuSectionOnTheScreen}>
         {t("menu.about")}
       </MenuElement>
       <MenuElement>{t("menu.experience")}</MenuElement>
