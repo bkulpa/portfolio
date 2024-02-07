@@ -7,7 +7,6 @@ export const SplitContainer = styled.div`
   margin: 0 auto;
   max-width: 1088px;
   min-width: 1024px;
-  padding: 96px;
 `;
 
 export const LeftContainer = styled.div`
@@ -15,7 +14,7 @@ export const LeftContainer = styled.div`
   max-width: 528px;
   min-width: 329.5px;
   overflow: hidden;
-  padding: 0;
+  padding: 96px 0;
 `;
 
 export const RightContainer = styled.div`
@@ -23,7 +22,9 @@ export const RightContainer = styled.div`
   max-width: 528px;
   min-width: 329.5px;
   overflow-y: auto;
-  padding: 0;
+  /* padding: 0; */
+  padding: 85px 0;
+  position: sticky;
 
   ::-webkit-scrollbar {
     display: none;
