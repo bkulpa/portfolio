@@ -81,11 +81,6 @@ const Home = () => {
             jobTitle={"home.experienceField.jobTitle-3"}
             jobTech={"home.experienceField.jobTech-3"}
           />
-          <CVLinkContainer>
-            <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
-              {t("home.experienceField.resume")}
-            </CVLink>
-          </CVLinkContainer>
         </div>
         <div>
           <ExperienceField
@@ -113,7 +108,12 @@ const Home = () => {
             jobTech={"home.educationField.educationTech-4"}
           />
         </div>
-        <div style={{ marginTop: "144px" }}>
+        <CVLinkContainer>
+          <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
+            {t("home.experienceField.resume")}
+          </CVLink>
+        </CVLinkContainer>
+        <div>
           <ProjectField
             projectAltText={"home.projectField.projectAltText-1"}
             projectDescription={"home.projectField.projectDescription-1"}
