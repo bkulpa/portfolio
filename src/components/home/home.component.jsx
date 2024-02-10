@@ -6,6 +6,8 @@ import { AboutField } from "../experience-field/experience-field.styles";
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
 
+import { useEffect, useRef } from "react";
+
 import Header from "../header/header.component";
 import ExperienceField from "../experience-field/experience-field.component";
 import {
@@ -15,6 +17,23 @@ import {
 import ProjectField from "../project-field/project-field.component";
 
 const Home = () => {
+  const scrollableRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      event.preventDefault();
+      if (scrollableRef.current) {
+        scrollableRef.current.scrollTop += event.deltaY;
+      }
+    };
+
+    document.addEventListener("wheel", handleScroll, { passive: false });
+
+    return () => {
+      document.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
+
   const { t } = useTranslation();
   const findMenuSection = MenuSectionFinder();
 
@@ -27,7 +46,8 @@ const Home = () => {
       <LeftContainer>
         <Header />
       </LeftContainer>
-      <RightContainer>
+      <RightContainer ref={scrollableRef}>
+        {/* <RightContainer> */}
         <AboutField>
           <StyledP
             ref={findMenuSection}
