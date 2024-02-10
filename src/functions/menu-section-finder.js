@@ -3,6 +3,8 @@ import { useDispatch } from "react-redux";
 import {
   setAboutVisibility,
   setExperienceVisibility,
+  setEducationVisibility,
+  setProjectsVisibility,
 } from "../store/visibility/visibility.reducer";
 
 const MenuSectionFinder = (sectionName) => {
@@ -18,6 +20,12 @@ const MenuSectionFinder = (sectionName) => {
             break;
           case "experience":
             dispatch(setExperienceVisibility(entry.isIntersecting));
+            break;
+          case "education":
+            dispatch(setEducationVisibility(entry.isIntersecting));
+            break;
+          case "projects":
+            dispatch(setProjectsVisibility(entry.isIntersecting));
             break;
           default:
             console.error("Unknown section name");

@@ -9,7 +9,6 @@ const Menu = () => {
   const { t } = useTranslation();
 
   const findRef = (section) => MenuSectionFinder(section);
-  const experienceRef = MenuSectionFinder("experience");
 
   const isAboutSectionOnTheScreen = useSelector(
     (state) => state.visibility.isAboutSectionOnTheScreen
@@ -19,9 +18,15 @@ const Menu = () => {
     (state) => state.visibility.isExperienceSectionOnTheScreen
   );
 
+  const isEducationSectionOnTheScreen = useSelector(
+    (state) => state.visibility.isEducationSectionOnTheScreen
+  );
+  const isProjectsSectionOnTheScreen = useSelector(
+    (state) => state.visibility.isProjectsSectionOnTheScreen
+  );
+
   return (
     <MenuList>
-      {/* Użyj referencji `aboutRef` dla elementu, który chcesz śledzić */}
       <MenuElementRefContainer ref={findRef("about")}>
         <MenuElement isHighlighted={isAboutSectionOnTheScreen}>
           {t("menu.about")}
@@ -33,10 +38,14 @@ const Menu = () => {
         </MenuElement>
       </MenuElementRefContainer>
       <MenuElementRefContainer ref={findRef("education")}>
-        <MenuElement>{t("menu.courses")}</MenuElement>
+        <MenuElement isHighlighted={isEducationSectionOnTheScreen}>
+          {t("menu.courses")}
+        </MenuElement>
       </MenuElementRefContainer>
       <MenuElementRefContainer ref={findRef("projects")}>
-        <MenuElement>{t("menu.projects")}</MenuElement>
+        <MenuElement isHighlighted={isProjectsSectionOnTheScreen}>
+          {t("menu.projects")}
+        </MenuElement>
       </MenuElementRefContainer>
     </MenuList>
   );
