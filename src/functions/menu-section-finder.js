@@ -5,36 +5,45 @@ import {
   setExperienceVisibility,
 } from "../store/visibility/visibility.reducer";
 
-const MenuSectionFinder = () => {
-  const findMenuSectionRef = useRef();
+const MenuSectionFinder = (sectionName) => {
+  const sectionRef = useRef();
   const dispatch = useDispatch();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        dispatch(setAboutVisibility(entry.isIntersecting));
+        switch (sectionName) {
+          case "about":
+            dispatch(setAboutVisibility(entry.isIntersecting));
+            break;
+          case "experience":
+            dispatch(setExperienceVisibility(entry.isIntersecting));
+            break;
+          default:
+            console.error("Unknown section name");
+        }
       },
       {
         // TODO: Uncomment this place
         // root: null,
         // rootMargin: "-33% 0px -33% 0px",
+
         threshold: 0.1,
       }
     );
 
-    if (findMenuSectionRef.current) {
-      observer.observe(findMenuSectionRef.current);
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
     }
 
     return () => {
-      if (findMenuSectionRef.current) {
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-        observer.unobserve(findMenuSectionRef.current);
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
       }
     };
-  }, [dispatch]);
+  }, [dispatch, sectionName]);
 
-  return findMenuSectionRef;
+  return sectionRef;
 };
 
 export default MenuSectionFinder;
