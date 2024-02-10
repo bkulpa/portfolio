@@ -1,13 +1,13 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 export const visibilitySlice = createSlice({
-  name: "visibility",
+  name: "visibilityAbout",
   initialState: {
-    isMenuSectionOnTheScreen: false,
+    isAboutSectionOnTheScreen: false,
   },
   reducers: {
     setVisibility: (state, action) => {
-      state.isMenuSectionOnTheScreen = action.payload;
+      state.isAboutSectionOnTheScreen = action.payload;
     },
   },
 });

@@ -41,7 +41,7 @@ export const ProjectFieldDescription = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-  align-self: flex-start; // Wyrównuje obraz do góry kontenera flex  width: 120px;
+  align-self: flex-start;
   height: 70px;
   margin-right: 20px;
   margin-top: 19px;

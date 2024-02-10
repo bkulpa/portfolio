@@ -5,13 +5,13 @@ import { MenuList, MenuElement } from "./menu.styled";
 
 const Menu = () => {
   const { t } = useTranslation();
-  const isMenuSectionOnTheScreen = useSelector(
-    (state) => state.visibility.isMenuSectionOnTheScreen
+  const isAboutSectionOnTheScreen = useSelector(
+    (state) => state.visibility.isAboutSectionOnTheScreen
   );
 
   return (
     <MenuList>
-      <MenuElement isHighlighted={isMenuSectionOnTheScreen}>
+      <MenuElement isHighlighted={isAboutSectionOnTheScreen}>
         {t("menu.about")}
       </MenuElement>
       <MenuElement>{t("menu.experience")}</MenuElement>

@@ -21,7 +21,7 @@ const Home = () => {
   useEffect(() => {
     const handleScroll = (event) => {
       event.preventDefault();
-      const scrollAmount = event.deltaY * 2.5;
+      const scrollAmount = event.deltaY * 6;
       if (scrollableRef.current) {
         scrollableRef.current.scrollBy({
           top: scrollAmount,
