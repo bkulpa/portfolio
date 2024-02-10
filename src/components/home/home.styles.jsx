@@ -25,6 +25,7 @@ export const RightContainer = styled.div`
   padding: 85px 0;
   position: sticky;
   scrollbar-width: none;
+  scroll-behavior: smooth; // Zapewnia płynne przewijanie
 
   ::-webkit-scrollbar {
     display: none;

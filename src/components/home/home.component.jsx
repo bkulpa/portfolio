@@ -1,20 +1,19 @@
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
-import MenuSectionFinder from "../../functions/menu-section-finder";
-
 import { AboutField } from "../experience-field/experience-field.styles";
-import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
-import StyledP from "../styled-tags/styled-p.styles";
-
-import { useEffect, useRef } from "react";
-
-import Header from "../header/header.component";
 import ExperienceField from "../experience-field/experience-field.component";
+import Header from "../header/header.component";
+import ProjectField from "../project-field/project-field.component";
+
 import {
   CVLink,
   CVLinkContainer,
 } from "../experience-field/experience-field.styles";
-import ProjectField from "../project-field/project-field.component";
+import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
+import StyledP from "../styled-tags/styled-p.styles";
+
+import MenuSectionFinder from "../../functions/menu-section-finder";
 
 const Home = () => {
   const scrollableRef = useRef(null);
@@ -22,8 +21,12 @@ const Home = () => {
   useEffect(() => {
     const handleScroll = (event) => {
       event.preventDefault();
+      const scrollAmount = event.deltaY * 2.5; // Możesz dostosować czynnik do swoich potrzeb
       if (scrollableRef.current) {
-        scrollableRef.current.scrollTop += event.deltaY;
+        scrollableRef.current.scrollBy({
+          top: scrollAmount,
+          behavior: "smooth",
+        });
       }
     };
 
@@ -47,7 +50,6 @@ const Home = () => {
         <Header />
       </LeftContainer>
       <RightContainer ref={scrollableRef}>
-        {/* <RightContainer> */}
         <AboutField>
           <StyledP
             ref={findMenuSection}
