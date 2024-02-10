@@ -23,8 +23,7 @@ export const MenuElement = styled.li`
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: ${(props) =>
-      props.isHighlighted ? "64px" : "32px"}; // Zmiana szerokości kreski
+    width: ${(props) => (props.isHighlighted ? "64px" : "32px")};
     height: 1px;
     background: rgb(148, 163, 184);
     transition: width 0.3s ease, background-color 0.3s ease, left 0.3s ease;

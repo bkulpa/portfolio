@@ -1,6 +1,9 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import { setVisibility } from "../store/visibility/visibility.reducer";
+import {
+  setAboutVisibility,
+  setExperienceVisibility,
+} from "../store/visibility/visibility.reducer";
 
 const MenuSectionFinder = () => {
   const findMenuSectionRef = useRef();
@@ -9,7 +12,7 @@ const MenuSectionFinder = () => {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        dispatch(setVisibility(entry.isIntersecting));
+        dispatch(setAboutVisibility(entry.isIntersecting));
       },
       {
         // TODO: Uncomment this place

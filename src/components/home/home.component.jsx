@@ -16,26 +16,26 @@ import StyledP from "../styled-tags/styled-p.styles";
 import MenuSectionFinder from "../../functions/menu-section-finder";
 
 const Home = () => {
-  const scrollableRef = useRef(null);
+  // const scrollableRef = useRef(null);
 
-  useEffect(() => {
-    const handleScroll = (event) => {
-      event.preventDefault();
-      const scrollAmount = event.deltaY * 6;
-      if (scrollableRef.current) {
-        scrollableRef.current.scrollBy({
-          top: scrollAmount,
-          behavior: "smooth",
-        });
-      }
-    };
+  // useEffect(() => {
+  //   const handleScroll = (event) => {
+  //     event.preventDefault();
+  //     const scrollAmount = event.deltaY * 6;
+  //     if (scrollableRef.current) {
+  //       scrollableRef.current.scrollBy({
+  //         // top: scrollAmount,
+  //         behavior: "smooth",
+  //       });
+  //     // }
+  //   };
 
-    document.addEventListener("wheel", handleScroll, { passive: false });
+  //   document.addEventListener("wheel", handleScroll, { passive: false });
 
-    return () => {
-      document.removeEventListener("wheel", handleScroll);
-    };
-  }, []);
+  //   return () => {
+  //     document.removeEventListener("wheel", handleScroll);
+  //   };
+  // }, []);
 
   const { t } = useTranslation();
   const findMenuSection = MenuSectionFinder();
@@ -49,7 +49,8 @@ const Home = () => {
       <LeftContainer>
         <Header />
       </LeftContainer>
-      <RightContainer ref={scrollableRef}>
+      <RightContainer>
+        {/* <RightContainer ref={scrollableRef}> */}
         <AboutField>
           <StyledP
             ref={findMenuSection}
