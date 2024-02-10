@@ -97,7 +97,28 @@ const Home = () => {
             projectDescription={"home.projectField.projectDescription-1"}
             projectImg={"projects-images/crwn-shop.png"}
             projectTitle={"home.projectField.projectTitle-1"}
-            projectUrl={"https://animated-halva-e22a2e.netlify.app/"}
+            projectUrl={"https://bkulpa-crwn-clothing-shop.netlify.app/"}
+          />
+          <ProjectField
+            projectAltText={"home.projectField.projectAltText-2"}
+            projectDescription={"home.projectField.projectDescription-2"}
+            projectImg={"projects-images/monster-rolodex.png"}
+            projectTitle={"home.projectField.projectTitle-2"}
+            projectUrl={"https://bkulpa-monster-rolodex.netlify.app/"}
+          />
+          <ProjectField
+            projectAltText={"home.projectField.projectAltText-3"}
+            projectDescription={"home.projectField.projectDescription-3"}
+            projectImg={"projects-images/fusely.png"}
+            projectTitle={"home.projectField.projectTitle-3"}
+            projectUrl={"https://bkulpa-fusely.netlify.app/"}
+          />
+          <ProjectField
+            projectAltText={"home.projectField.projectAltText-4"}
+            projectDescription={"home.projectField.projectDescription-4"}
+            projectImg={"projects-images/cahee.png"}
+            projectTitle={"home.projectField.projectTitle-4"}
+            projectUrl={"https://bkulpa-cahee.netlify.app/"}
           />
         </div>
       </RightContainer>

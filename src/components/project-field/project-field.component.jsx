@@ -29,7 +29,7 @@ const ProjectField = ({
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <ProjectLink href={projectUrl}>
+      <ProjectLink href={projectUrl} target="_blank">
         <ProjectImage alt={t(projectAltText)} src={projectImg} />
         <ProjectDetailsContainer>
           <div>
