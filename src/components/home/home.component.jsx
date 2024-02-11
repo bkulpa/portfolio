@@ -6,7 +6,9 @@ import Header from "../header/header.component";
 import ProjectField from "../project-field/project-field.component";
 
 import AboutSectionFinder from "../../functions/about-section-finder";
+import EducationSectionFinder from "../../functions/education-section-finder";
 import ExperienceSectionFinder from "../../functions/experience-section-finder";
+import ProjectsSectionFinder from "../../functions/projects-section-finder";
 
 import {
   CVLink,
@@ -19,7 +21,9 @@ const Home = () => {
   const { t } = useTranslation();
 
   const findAboutSection = AboutSectionFinder();
+  const findEducationSection = EducationSectionFinder();
   const findExperienceSection = ExperienceSectionFinder();
+  const findProjectsSection = ProjectsSectionFinder();
 
   const setInnerHTML = (translation) => {
     return { __html: t(translation) };
@@ -65,7 +69,7 @@ const Home = () => {
             jobTech={"home.experienceField.jobTech-3"}
           />
         </div>
-        <div>
+        <div ref={findEducationSection}>
           <ExperienceField
             jobDate={"home.educationField.educationDate-1"}
             jobDescription={"home.educationField.educationDescription-1"}
@@ -96,7 +100,7 @@ const Home = () => {
             {t("home.experienceField.resume")}
           </CVLink>
         </CVLinkContainer>
-        <div>
+        <div ref={findProjectsSection}>
           <ProjectField
             projectAltText={"home.projectField.projectAltText-1"}
             projectDescription={"home.projectField.projectDescription-1"}

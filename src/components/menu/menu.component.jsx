@@ -10,8 +10,16 @@ const Menu = () => {
     (state) => state.aboutVisibility.isAboutSectionOnTheScreen
   );
 
+  const isEducationSectionOnTheScreen = useSelector(
+    (state) => state.educationVisibility.isEducationSectionOnTheScreen
+  );
+
   const isExperienceSectionOnTheScreen = useSelector(
     (state) => state.experienceVisibility.isExperienceSectionOnTheScreen
+  );
+
+  const isProjectsSectionOnTheScreen = useSelector(
+    (state) => state.projectsVisibility.isProjectsSectionOnTheScreen
   );
 
   return (
@@ -22,8 +30,12 @@ const Menu = () => {
       <MenuElement isHighlighted={isExperienceSectionOnTheScreen}>
         {t("menu.experience")}
       </MenuElement>
-      <MenuElement>{t("menu.education")}</MenuElement>
-      <MenuElement>{t("menu.projects")}</MenuElement>
+      <MenuElement isHighlighted={isEducationSectionOnTheScreen}>
+        {t("menu.education")}
+      </MenuElement>
+      <MenuElement isHighlighted={isProjectsSectionOnTheScreen}>
+        {t("menu.projects")}
+      </MenuElement>
     </MenuList>
   );
 };

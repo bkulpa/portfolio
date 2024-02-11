@@ -3,15 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 export const educationVisibilitySlice = createSlice({
   name: "educationVisibility",
   initialState: {
-    isVisible: false,
+    isEducationSectionOnTheScreen: false,
   },
   reducers: {
-    setVisibility: (state, action) => {
-      state.isVisible = action.payload;
+    setEducationVisibility: (state, action) => {
+      state.isEducationSectionOnTheScreen = action.payload;
     },
   },
 });
 
-export const { setVisibility: setEducationVisibility } =
-  educationVisibilitySlice.actions;
+export const { setEducationVisibility } = educationVisibilitySlice.actions;
 export default educationVisibilitySlice.reducer;
