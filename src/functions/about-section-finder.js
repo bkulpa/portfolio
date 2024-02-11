@@ -1,6 +1,7 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setAboutVisibility } from "../store/visibility/aboutVisibilitySlice";
+
 const AboutSectionFinder = () => {
   const findAboutSectionRef = useRef();
   const dispatch = useDispatch();

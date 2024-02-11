@@ -1,7 +1,10 @@
 import { configureStore } from "@reduxjs/toolkit";
-import visibilityReducer from "./visibility/aboutVisibilitySlice";
+import aboutVisibilityReducer from "./visibility/aboutVisibilitySlice";
+import experienceVisibilityReducer from "./visibility/experienceVisibilitySlice";
+
 export default configureStore({
   reducer: {
-    visibility: visibilityReducer,
+    aboutVisibility: aboutVisibilityReducer, // Zmieniono nazwę klucza dla lepszej czytelności
+    experienceVisibility: experienceVisibilityReducer,
   },
 });

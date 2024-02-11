@@ -4,7 +4,9 @@ import { AboutField } from "../experience-field/experience-field.styles";
 import ExperienceField from "../experience-field/experience-field.component";
 import Header from "../header/header.component";
 import ProjectField from "../project-field/project-field.component";
+
 import AboutSectionFinder from "../../functions/about-section-finder";
+import ExperienceSectionFinder from "../../functions/experience-section-finder";
 
 import {
   CVLink,
@@ -15,7 +17,9 @@ import StyledP from "../styled-tags/styled-p.styles";
 
 const Home = () => {
   const { t } = useTranslation();
-  const findMenuSection = AboutSectionFinder();
+
+  const findAboutSection = AboutSectionFinder();
+  const findExperienceSection = ExperienceSectionFinder();
 
   const setInnerHTML = (translation) => {
     return { __html: t(translation) };
@@ -29,19 +33,19 @@ const Home = () => {
       <RightContainer>
         <AboutField>
           <StyledP
-            ref={findMenuSection}
+            ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
           />
           <StyledP
-            // ref={findMenuSection}
+            // ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-2")}
           />
           <StyledP
-            // ref={findMenuSection}
+            // ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>
-        <div>
+        <div ref={findExperienceSection}>
           <ExperienceField
             jobDate={"home.experienceField.jobDate-1"}
             jobDescription={"home.experienceField.jobDescription-1"}

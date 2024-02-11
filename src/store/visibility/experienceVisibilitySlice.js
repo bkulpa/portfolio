@@ -3,15 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 export const experienceVisibilitySlice = createSlice({
   name: "experienceVisibility",
   initialState: {
-    isVisible: false,
+    isExperienceSectionOnTheScreen: false,
   },
   reducers: {
-    setVisibility: (state, action) => {
-      state.isVisible = action.payload;
+    setExperienceVisibility: (state, action) => {
+      state.isExperienceSectionOnTheScreen = action.payload;
     },
   },
 });
 
-export const { setVisibility: setExperienceVisibility } =
-  experienceVisibilitySlice.actions;
+export const { setExperienceVisibility } = experienceVisibilitySlice.actions;
 export default experienceVisibilitySlice.reducer;

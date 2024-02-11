@@ -5,8 +5,13 @@ import { MenuList, MenuElement } from "./menu.styled";
 
 const Menu = () => {
   const { t } = useTranslation();
+
   const isAboutSectionOnTheScreen = useSelector(
-    (state) => state.visibility.isAboutSectionOnTheScreen
+    (state) => state.aboutVisibility.isAboutSectionOnTheScreen
+  );
+
+  const isExperienceSectionOnTheScreen = useSelector(
+    (state) => state.experienceVisibility.isExperienceSectionOnTheScreen
   );
 
   return (
@@ -14,7 +19,9 @@ const Menu = () => {
       <MenuElement isHighlighted={isAboutSectionOnTheScreen}>
         {t("menu.about")}
       </MenuElement>
-      <MenuElement>{t("menu.experience")}</MenuElement>
+      <MenuElement isHighlighted={isExperienceSectionOnTheScreen}>
+        {t("menu.experience")}
+      </MenuElement>
       <MenuElement>{t("menu.education")}</MenuElement>
       <MenuElement>{t("menu.projects")}</MenuElement>
     </MenuList>

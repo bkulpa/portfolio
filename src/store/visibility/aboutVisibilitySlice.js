@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
-export const visibilitySlice = createSlice({
-  name: "visibility",
+export const aboutVisibilitySlice = createSlice({
+  name: "aboutVisibility",
   initialState: {
     isAboutSectionOnTheScreen: false,
   },
@@ -12,5 +12,5 @@ export const visibilitySlice = createSlice({
   },
 });
 
-export const { setAboutVisibility } = visibilitySlice.actions;
-export default visibilitySlice.reducer;
+export const { setAboutVisibility } = aboutVisibilitySlice.actions;
+export default aboutVisibilitySlice.reducer;
