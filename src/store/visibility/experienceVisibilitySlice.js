@@ -15,5 +15,3 @@ export const experienceVisibilitySlice = createSlice({
 export const { setVisibility: setExperienceVisibility } =
   experienceVisibilitySlice.actions;
 export default experienceVisibilitySlice.reducer;
-
-// Powtórz tę strukturę dla `experienceVisibilitySlice`, `educationVisibilitySlice`, i `projectsVisibilitySlice`

@@ -1,10 +1,10 @@
-import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { AboutField } from "../experience-field/experience-field.styles";
 import ExperienceField from "../experience-field/experience-field.component";
 import Header from "../header/header.component";
 import ProjectField from "../project-field/project-field.component";
+import AboutSectionFinder from "../../functions/about-section-finder";
 
 import {
   CVLink,
@@ -13,11 +13,9 @@ import {
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
 
-import MenuSectionFinder from "../../functions/menu-section-finder";
-
 const Home = () => {
   const { t } = useTranslation();
-  const findMenuSection = MenuSectionFinder();
+  const findMenuSection = AboutSectionFinder();
 
   const setInnerHTML = (translation) => {
     return { __html: t(translation) };
@@ -35,9 +33,11 @@ const Home = () => {
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
           />
           <StyledP
+            // ref={findMenuSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-2")}
           />
           <StyledP
+            // ref={findMenuSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>

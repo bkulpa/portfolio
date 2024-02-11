@@ -1,8 +1,8 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
 import { setAboutVisibility } from "../store/visibility/aboutVisibilitySlice";
-const MenuSectionFinder = () => {
-  const findMenuSectionRef = useRef();
+const AboutSectionFinder = () => {
+  const findAboutSectionRef = useRef();
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -18,19 +18,19 @@ const MenuSectionFinder = () => {
       }
     );
 
-    if (findMenuSectionRef.current) {
-      observer.observe(findMenuSectionRef.current);
+    if (findAboutSectionRef.current) {
+      observer.observe(findAboutSectionRef.current);
     }
 
     return () => {
-      if (findMenuSectionRef.current) {
+      if (findAboutSectionRef.current) {
         // eslint-disable-next-line react-hooks/exhaustive-deps
-        observer.unobserve(findMenuSectionRef.current);
+        observer.unobserve(findAboutSectionRef.current);
       }
     };
   }, [dispatch]);
 
-  return findMenuSectionRef;
+  return findAboutSectionRef;
 };
 
-export default MenuSectionFinder;
+export default AboutSectionFinder;
