@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import { useTranslation } from "react-i18next";
 
 import { AboutField } from "../experience-field/experience-field.styles";
@@ -16,10 +17,7 @@ import MenuSectionFinder from "../../functions/menu-section-finder";
 
 const Home = () => {
   const { t } = useTranslation();
-  const findAboutSection = MenuSectionFinder("about");
-  const findExperienceSection = MenuSectionFinder("experience");
-  const findEducationSection = MenuSectionFinder("education");
-  const findProjectsSection = MenuSectionFinder("projects");
+  const findMenuSection = MenuSectionFinder();
 
   const setInnerHTML = (translation) => {
     return { __html: t(translation) };
@@ -33,35 +31,30 @@ const Home = () => {
       <RightContainer>
         <AboutField>
           <StyledP
-            ref={findAboutSection}
+            ref={findMenuSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
           />
           <StyledP
-            ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-2")}
           />
           <StyledP
-            ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>
         <div>
           <ExperienceField
-            ref={findExperienceSection}
             jobDate={"home.experienceField.jobDate-1"}
             jobDescription={"home.experienceField.jobDescription-1"}
             jobTitle={"home.experienceField.jobTitle-1"}
             jobTech={"home.experienceField.jobTech-1"}
           />
           <ExperienceField
-            ref={findExperienceSection}
             jobDate={"home.experienceField.jobDate-2"}
             jobDescription={"home.experienceField.jobDescription-2"}
             jobTitle={"home.experienceField.jobTitle-2"}
             jobTech={"home.experienceField.jobTech-2"}
           />
           <ExperienceField
-            ref={findExperienceSection}
             jobDate={"home.experienceField.jobDate-3"}
             jobDescription={"home.experienceField.jobDescription-3"}
             jobTitle={"home.experienceField.jobTitle-3"}
@@ -70,28 +63,24 @@ const Home = () => {
         </div>
         <div>
           <ExperienceField
-            ref={findEducationSection}
             jobDate={"home.educationField.educationDate-1"}
             jobDescription={"home.educationField.educationDescription-1"}
             jobTitle={"home.educationField.educationTitle-1"}
             jobTech={"home.educationField.educationTech-1"}
           />
           <ExperienceField
-            ref={findEducationSection}
             jobDate={"home.educationField.educationDate-2"}
             jobDescription={"home.educationField.educationDescription-2"}
             jobTitle={"home.educationField.educationTitle-2"}
             jobTech={"home.educationField.educationTech-2"}
           />
           <ExperienceField
-            ref={findEducationSection}
             jobDate={"home.educationField.educationDate-3"}
             jobDescription={"home.educationField.educationDescription-3"}
             jobTitle={"home.educationField.educationTitle-3"}
             jobTech={"home.educationField.educationTech-3"}
           />
           <ExperienceField
-            ref={findEducationSection}
             jobDate={"home.educationField.educationDate-4"}
             jobDescription={"home.educationField.educationDescription-4"}
             jobTitle={"home.educationField.educationTitle-4"}
@@ -105,7 +94,6 @@ const Home = () => {
         </CVLinkContainer>
         <div>
           <ProjectField
-            ref={findProjectsSection}
             projectAltText={"home.projectField.projectAltText-1"}
             projectDescription={"home.projectField.projectDescription-1"}
             projectImg={"projects-images/crwn-shop.png"}
@@ -113,7 +101,6 @@ const Home = () => {
             projectUrl={"https://bkulpa-crwn-clothing-shop.netlify.app/"}
           />
           <ProjectField
-            ref={findProjectsSection}
             projectAltText={"home.projectField.projectAltText-2"}
             projectDescription={"home.projectField.projectDescription-2"}
             projectImg={"projects-images/monster-rolodex.png"}
@@ -121,7 +108,6 @@ const Home = () => {
             projectUrl={"https://bkulpa-monster-rolodex.netlify.app/"}
           />
           <ProjectField
-            ref={findProjectsSection}
             projectAltText={"home.projectField.projectAltText-3"}
             projectDescription={"home.projectField.projectDescription-3"}
             projectImg={"projects-images/fusely.png"}
@@ -129,7 +115,6 @@ const Home = () => {
             projectUrl={"https://bkulpa-fusely.netlify.app/"}
           />
           <ProjectField
-            ref={findProjectsSection}
             projectAltText={"home.projectField.projectAltText-4"}
             projectDescription={"home.projectField.projectDescription-4"}
             projectImg={"projects-images/cahee.png"}

@@ -1,57 +1,36 @@
 import { useEffect, useRef } from "react";
 import { useDispatch } from "react-redux";
-import {
-  setAboutVisibility,
-  setExperienceVisibility,
-  setEducationVisibility,
-  setProjectsVisibility,
-} from "../store/visibility/visibility.reducer";
-
-const MenuSectionFinder = (sectionName) => {
-  const sectionRef = useRef();
+import { setAboutVisibility } from "../store/visibility/aboutVisibilitySlice";
+const MenuSectionFinder = () => {
+  const findMenuSectionRef = useRef();
   const dispatch = useDispatch();
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        switch (sectionName) {
-          case "about":
-            dispatch(setAboutVisibility(entry.isIntersecting));
-            break;
-          case "experience":
-            dispatch(setExperienceVisibility(entry.isIntersecting));
-            break;
-          case "education":
-            dispatch(setEducationVisibility(entry.isIntersecting));
-            break;
-          case "projects":
-            dispatch(setProjectsVisibility(entry.isIntersecting));
-            break;
-          default:
-            console.error("Unknown section name");
-        }
+        dispatch(setAboutVisibility(entry.isIntersecting));
       },
       {
         // TODO: Uncomment this place
         // root: null,
         // rootMargin: "-33% 0px -33% 0px",
-
         threshold: 0.1,
       }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    if (findMenuSectionRef.current) {
+      observer.observe(findMenuSectionRef.current);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (findMenuSectionRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        observer.unobserve(findMenuSectionRef.current);
       }
     };
-  }, [dispatch, sectionName]);
+  }, [dispatch]);
 
-  return sectionRef;
+  return findMenuSectionRef;
 };
 
 export default MenuSectionFinder;
