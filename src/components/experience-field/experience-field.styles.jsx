@@ -4,6 +4,7 @@ export const AboutField = styled.div`
   margin-bottom: 144px;
   max-width: 528px;
   padding-left: 14px;
+  padding-top: 85px;
 `;
 
 export const CVLink = styled.a`

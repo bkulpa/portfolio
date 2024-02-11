@@ -22,10 +22,10 @@ export const RightContainer = styled.div`
   max-width: 600px;
   min-width: 329.5px;
   overflow-y: auto;
-  padding: 85px 0;
+  padding-bottom: 85px;
   position: sticky;
   scrollbar-width: none;
-  scroll-behavior: smooth; // Zapewnia płynne przewijanie
+  scroll-behavior: smooth;
 
   ::-webkit-scrollbar {
     display: none;

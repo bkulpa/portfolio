@@ -1,7 +1,7 @@
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 
-import { MenuList, MenuElement } from "./menu.styled";
+import { MenuList, MenuElement, MenuElementLink } from "./menu.styled";
 
 const Menu = () => {
   const { t } = useTranslation();
@@ -25,16 +25,20 @@ const Menu = () => {
   return (
     <MenuList>
       <MenuElement isHighlighted={isAboutSectionOnTheScreen}>
-        {t("menu.about")}
+        <MenuElementLink href="#about">{t("menu.about")}</MenuElementLink>
       </MenuElement>
       <MenuElement isHighlighted={isExperienceSectionOnTheScreen}>
-        {t("menu.experience")}
+        <MenuElementLink href="#experience">
+          {t("menu.experience")}
+        </MenuElementLink>
       </MenuElement>
       <MenuElement isHighlighted={isEducationSectionOnTheScreen}>
-        {t("menu.education")}
+        <MenuElementLink href="#education">
+          {t("menu.education")}
+        </MenuElementLink>
       </MenuElement>
       <MenuElement isHighlighted={isProjectsSectionOnTheScreen}>
-        {t("menu.projects")}
+        <MenuElementLink href="#projects">{t("menu.projects")}</MenuElementLink>
       </MenuElement>
     </MenuList>
   );

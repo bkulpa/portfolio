@@ -35,7 +35,7 @@ const Home = () => {
         <Header />
       </LeftContainer>
       <RightContainer>
-        <AboutField>
+        <AboutField id="about">
           <StyledP
             ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
@@ -49,7 +49,7 @@ const Home = () => {
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>
-        <div ref={findExperienceSection}>
+        <div id="experience" ref={findExperienceSection}>
           <ExperienceField
             jobDate={"home.experienceField.jobDate-1"}
             jobDescription={"home.experienceField.jobDescription-1"}
@@ -69,7 +69,7 @@ const Home = () => {
             jobTech={"home.experienceField.jobTech-3"}
           />
         </div>
-        <div ref={findEducationSection}>
+        <div id="education" ref={findEducationSection}>
           <ExperienceField
             jobDate={"home.educationField.educationDate-1"}
             jobDescription={"home.educationField.educationDescription-1"}
@@ -100,7 +100,7 @@ const Home = () => {
             {t("home.experienceField.resume")}
           </CVLink>
         </CVLinkContainer>
-        <div ref={findProjectsSection}>
+        <div id="projects" ref={findProjectsSection}>
           <ProjectField
             projectAltText={"home.projectField.projectAltText-1"}
             projectDescription={"home.projectField.projectDescription-1"}
