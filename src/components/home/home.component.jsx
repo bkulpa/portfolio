@@ -34,18 +34,16 @@ const Home = () => {
       <LeftContainer>
         <Header />
       </LeftContainer>
-      <RightContainer>
+      <RightContainer id="scrollContainer">
         <AboutField id="about">
           <StyledP
             ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
           />
           <StyledP
-            // ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-2")}
           />
           <StyledP
-            // ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>

@@ -1,5 +1,3 @@
-// Przykładowy kod, zakładając, że mamy już mechanizm do zarządzania widocznością sekcji
-
 import { useSelector } from "react-redux";
 import { useTranslation } from "react-i18next";
 import { MenuList, MenuElement, MenuElementLink } from "./menu.styled";
@@ -7,7 +5,6 @@ import { MenuList, MenuElement, MenuElementLink } from "./menu.styled";
 const Menu = () => {
   const { t } = useTranslation();
 
-  // Przykład selektorów (przyjmujemy, że te selektory już istnieją)
   const isAboutSectionOnTheScreen = useSelector(
     (state) => state.aboutVisibility.isAboutSectionOnTheScreen
   );
@@ -21,8 +18,6 @@ const Menu = () => {
     (state) => state.projectsVisibility.isProjectsSectionOnTheScreen
   );
 
-  // Logika do określenia, która sekcja jest wyróżniona
-  // Wymaga dostosowania w zależności od logiki określającej, która sekcja jest aktualnie na ekranie
   const highlightedSection = isAboutSectionOnTheScreen
     ? "about"
     : isExperienceSectionOnTheScreen

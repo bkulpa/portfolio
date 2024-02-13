@@ -13,7 +13,6 @@ export const LeftContainer = styled.div`
   flex: 1;
   max-width: 528px;
   min-width: 329.5px;
-  /* overflow: hidden; */
   padding: 96px 0;
 `;
 
