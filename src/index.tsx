@@ -8,6 +8,7 @@ import "./i18n";
 import { Provider } from "react-redux";
 
 import store from "./store/store";
+import AppHelmet from "./components/app-helmet/app-helmet.component";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -15,8 +16,10 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={store}>
+      <AppHelmet />
       <BrowserRouter>
         <App />
+        {/* </AppHelmet> */}
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
