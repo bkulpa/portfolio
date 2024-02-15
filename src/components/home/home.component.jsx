@@ -80,6 +80,11 @@ const Home = () => {
               jobTech={"home.experienceField.jobTech-3"}
             />
           </div>
+          <CVLinkContainer>
+            <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
+              {t("home.experienceField.resume")}
+            </CVLink>
+          </CVLinkContainer>
           <div id="education" ref={findEducationSection}>
             <ExperienceField
               jobDate={"home.educationField.educationDate-1"}
@@ -106,11 +111,6 @@ const Home = () => {
               jobTech={"home.educationField.educationTech-4"}
             />
           </div>
-          <CVLinkContainer>
-            <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
-              {t("home.experienceField.resume")}
-            </CVLink>
-          </CVLinkContainer>
           <div id="projects" ref={findProjectsSection}>
             <ProjectField
               projectAltText={"home.projectField.projectAltText-1"}
