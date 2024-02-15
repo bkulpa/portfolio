@@ -22,10 +22,10 @@
   "home.experienceField.jobDate-2": "03.2020 — PRESENT",
   "home.experienceField.jobDate-3": "09.2019 — 03.2020",
   "home.experienceField.jobDescription-1": "As a front-end developer, I specialized in creating responsive user interfaces with React, ensuring seamless navigation with React Router, and applying Styled Components for cohesive styling. I managed application state using Redux, enabling consistent UI and data synchronization. My role also involved diligent debugging and error resolution to maintain application integrity. Additionally, I prioritized clear documentation and detailed component descriptions to enhance code readability and teamwork.",
-  "home.experienceField.jobDescription-2": "In my position, I focused on data preparation and processing with Oracle SQL, tailored to customer needs, and developed analytical report templates using Delphi. I configured and parameterized ERP systems, optimizing them for client operations, and managed their exploitation. Analyzing customer needs and business processes was central to providing customized solutions. Additionally, I was responsible for crafting and delivering product presentations, effectively highlighting solution benefits to clients and strengthening client relationships.",
+  "home.experienceField.jobDescription-2": "In my position, I focused on data preparation and processing with Oracle SQL, tailored to customer needs, and developed analytical report templates using Delphi. I configured and parameterized ERP systems, optimizing them for client operations, and managed their operation. Analyzing customer needs and business processes was central to providing customized solutions. Additionally, I was responsible for crafting and delivering product presentations, effectively highlighting solution benefits to clients and strengthening client relationships.",
   "home.experienceField.jobDescription-3": "I resolved technical issues with the portal, managed SSH operations for secure network administration, and configured software to enhance functionality. Running the helpdesk independently, I provided prompt user support. Additionally, I moderated the website to meet SEO standards and verified the accuracy of changes and content. I also served as the IT representative, aligning technical operations with company goals.",
   "home.experienceField.jobTech-1": "JavaScript,React.js,Redux,Styled Components,CSS,GIT,SCRUM",
-  "home.experienceField.jobTech-2": "Oracle Databases,Oracle SQL,Python,Delphi,Data analysis,SSH,Windows Serwer,Software Implementation",
+  "home.experienceField.jobTech-2": "Oracle Databases,Oracle SQL,Python,Delphi,Data analysis,SSH,Windows/Linux Server,Software Implementation",
   "home.experienceField.jobTech-3": "CSS,HTML,SSH,MySQL,SEO,IT consulting,Technical support",
   "home.experienceField.jobTitle-1": "Junior Frontend Developer · CryptoTradingHub",
   "home.experienceField.jobTitle-2": "Mid Software Implementation Specialist · Unisoft",
@@ -49,5 +49,6 @@
   "menu.about": "ABOUT",
   "menu.education": "EDUCATION",
   "menu.experience": "EXPERIENCE",
-  "menu.projects": "PROJECTS"
+  "menu.projects": "PROJECTS",
+  "page.title": "Bartosz Kulpa"
 }
