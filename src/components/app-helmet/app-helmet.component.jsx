@@ -13,7 +13,7 @@ const AppHelmet = () => {
       <meta property="og:description" content="Bartosz Kulpa - Portfolio" />
       <meta
         property="og:image"
-        content="https://drive.google.com/file/d/1-Ec_8zsCsu_wPngc30AunEHgTRQTIS2J/view?usp=drive_link"
+        content="https://bkulpa.pl/page-fb-cover-photo.png"
       />
     </Helmet>
   );
