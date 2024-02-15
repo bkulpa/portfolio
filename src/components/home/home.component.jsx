@@ -46,6 +46,11 @@ const Home = () => {
       <SplitContainer>
         <LeftContainer>
           <Header />
+          <img
+            src="page-fb-cover-photo.png"
+            alt=""
+            style={{ display: "none" }}
+          />
         </LeftContainer>
         <RightContainer id="scrollContainer">
           <AboutField id="about">

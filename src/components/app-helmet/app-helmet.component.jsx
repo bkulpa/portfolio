@@ -9,7 +9,7 @@ const AppHelmet = () => {
       <link rel="icon" type="image/png" href="/icon.png" />
       <meta property="og:url" content="https://www.bkulpa.pl/" />
       <meta property="og:type" content="website" />
-      <meta property="og:title" content="Bartosz Kulpa" />
+      <meta property="og:title" content="Bartosz Kulpa - Portfolio" />
       <meta property="og:description" content="Bartosz Kulpa - Portfolio" />
       <meta
         property="og:image"
