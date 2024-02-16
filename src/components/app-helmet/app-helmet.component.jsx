@@ -11,6 +11,8 @@ const AppHelmet = () => {
       <meta property="og:type" content="website" />
       <meta property="og:title" content="Bartosz Kulpa - Portfolio" />
       <meta property="og:description" content="Bartosz Kulpa - Portfolio" />
+      <meta property="fb:app_id" content="757138292664342" />
+
       <meta
         property="og:image"
         content="https://bkulpa.pl/page-fb-cover-photo.png"
