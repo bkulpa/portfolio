@@ -3,6 +3,7 @@ import aboutVisibilityReducer from "./visibility/aboutVisibilitySlice";
 import educationVisibilityReducer from "./visibility/educationVisibilitySlice";
 import experienceVisibilityReducer from "./visibility/experienceVisibilitySlice";
 import projectsVisibilityReducer from "./visibility/projectsVisibilitySlice";
+import pageTitleReducer from "./page-title/page-title";
 
 export default configureStore({
   reducer: {
@@ -10,5 +11,6 @@ export default configureStore({
     educationVisibility: educationVisibilityReducer,
     experienceVisibility: experienceVisibilityReducer,
     projectsVisibility: projectsVisibilityReducer,
+    pageTitle: pageTitleReducer,
   },
 });

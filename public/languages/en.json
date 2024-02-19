@@ -50,5 +50,6 @@
   "menu.education": "EDUCATION",
   "menu.experience": "EXPERIENCE",
   "menu.projects": "PROJECTS",
-  "page.title": "Bartosz Kulpa"
+  "page.title": "Bartosz Kulpa",
+  "page.title.404": "This page could not be found"
 }

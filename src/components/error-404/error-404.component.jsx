@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 import {
   ErrorCode,
   ErrorContainer,
@@ -6,16 +8,17 @@ import {
   VerticalLine,
 } from "./error-404.styles";
 
-const ErrorPage = () => {
+const Error404 = () => {
+  const { t } = useTranslation();
   return (
     <ErrorContainer>
       <ErrorMessageContainer>
         <ErrorCode>404</ErrorCode>
         <VerticalLine />
-        <ErrorMessage>This page could not be found</ErrorMessage>
+        <ErrorMessage>{t("page.title.404")}</ErrorMessage>
       </ErrorMessageContainer>
     </ErrorContainer>
   );
 };
 
-export default ErrorPage;
+export default Error404;
