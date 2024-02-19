@@ -1,7 +1,7 @@
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
-import { Route, Routes, BrowserRouter as Router } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { setPageTitle } from "./store/page-title/page-title";
 
 import Error404 from "./components/error-404/error-404.component";
@@ -13,7 +13,6 @@ import "./App.css";
 function App() {
   const dispatch = useDispatch();
   const location = useLocation();
-  const pageTitle = useSelector((state) => state.pageTitle);
 
   useEffect(() => {
     const titleKey =
