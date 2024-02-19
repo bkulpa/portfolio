@@ -32,7 +32,7 @@ const Home = () => {
 
   return (
     <>
-      <StyledH3>
+      {/* <StyledH3>
         PAGE UNDER DEVELOPMENT...
         <br />
         CSS FOR MOBILE DEVICES WILL BE ADDED SOON,
@@ -42,7 +42,7 @@ const Home = () => {
         404 HANDLING WILL BE ADDED SOON,
         <br />
         CONTACT DETAILS AND OTHER MINOR CHANGES WILL BE ADDED SOON
-      </StyledH3>
+      </StyledH3> */}
       <SplitContainer>
         <LeftContainer>
           <Header />

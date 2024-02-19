@@ -1,11 +1,22 @@
 .App {
   text-align: center;
 }
+
 body {
   background-color: rgb(15 23 42);
   font-family: "Josefin Sans", sans-serif;
-  overflow: hidden;
   position: relative;
+}
+
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /* TODO: Ustawić efekt oświetlenia */
