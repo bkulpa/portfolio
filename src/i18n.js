@@ -15,8 +15,7 @@ i18n
       caches: ["cookie"],
     },
     backend: {
-      // Ścieżka do załadowania tłumaczeń, `public` jest dostępne pod adresem '/'
-      loadPath: "/languages/{{lng}}.json",
+      loadPath: "./languages/{{lng}}.json",
     },
     react: {
       useSuspense: true,
