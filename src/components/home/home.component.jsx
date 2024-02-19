@@ -16,6 +16,7 @@ import {
 } from "../experience-field/experience-field.styles";
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
+import StyledH3 from "../styled-tags/styled-h3.styles";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -31,15 +32,13 @@ const Home = () => {
 
   return (
     <>
-      {/* <StyledH3>
+      <StyledH3>
         PAGE UNDER DEVELOPMENT...
         <br />
         CSS FOR MOBILE DEVICES WILL BE ADDED SOON,
         <br />
-        404 HANDLING WILL BE ADDED SOON,
-        <br />
         CONTACT DETAILS AND OTHER MINOR CHANGES WILL BE ADDED SOON
-      </StyledH3> */}
+      </StyledH3>
       <SplitContainer>
         <LeftContainer>
           <Header />
