@@ -6,7 +6,6 @@ import Home from "./components/home/home.component";
 function App() {
   return (
     <>
-      {/* <AppHelmet /> */}
       {/* <LightEffect /> */}
       <Home />
     </>
