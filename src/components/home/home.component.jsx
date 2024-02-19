@@ -16,7 +16,6 @@ import {
 } from "../experience-field/experience-field.styles";
 import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
-import StyledH3 from "../styled-tags/styled-h3.styles";
 
 const Home = () => {
   const { t } = useTranslation();
