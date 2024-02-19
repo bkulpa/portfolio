@@ -4,6 +4,7 @@ export const SplitContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin: 0 auto;
   max-width: 1088px;
   min-width: 1024px;
 `;

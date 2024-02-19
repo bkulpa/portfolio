@@ -37,8 +37,6 @@ const Home = () => {
         <br />
         CSS FOR MOBILE DEVICES WILL BE ADDED SOON,
         <br />
-        SCROLLING ACROSS THE ENTIRE PAGE WILL BE ADDED SOON,
-        <br />
         404 HANDLING WILL BE ADDED SOON,
         <br />
         CONTACT DETAILS AND OTHER MINOR CHANGES WILL BE ADDED SOON
