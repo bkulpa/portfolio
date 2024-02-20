@@ -2,37 +2,38 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(15 23 42);
+  font-family: "Josefin Sans", sans-serif;
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+html,
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.App-link {
-  color: #61dafb;
+/* TODO: Ustawić efekt oświetlenia */
+/* css below will be fix in the future */
+/* ligh-effect component must be also fix */
+
+/* .light-effect {
+   fixed inset-0 z-30 transition duration-300 lg:absolute"
+  style="background: radial-gradient(600px at 1002px 292px, rgba(29, 78, 216, 0.15), transparent 80%);"
+} */
+
+.highlight__about {
+  color: rgb(215, 223, 238);
+  font-weight: bold;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hovered__element.on-hover {
+  color: rgb(94, 234, 212);
 }
