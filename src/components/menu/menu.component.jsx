@@ -30,22 +30,26 @@ const Menu = () => {
 
   return (
     <MenuList>
-      <MenuElement isHighlighted={highlightedSection === "about"}>
-        <MenuElementLink href="#about">{t("menu.about")}</MenuElementLink>
-      </MenuElement>
-      <MenuElement isHighlighted={highlightedSection === "experience"}>
-        <MenuElementLink href="#experience">
+      <MenuElementLink href="#about">
+        <MenuElement isHighlighted={highlightedSection === "about"}>
+          {t("menu.about")}
+        </MenuElement>
+      </MenuElementLink>
+      <MenuElementLink href="#experience">
+        <MenuElement isHighlighted={highlightedSection === "experience"}>
           {t("menu.experience")}
-        </MenuElementLink>
-      </MenuElement>
-      <MenuElement isHighlighted={highlightedSection === "education"}>
-        <MenuElementLink href="#education">
+        </MenuElement>
+      </MenuElementLink>
+      <MenuElementLink href="#education">
+        <MenuElement isHighlighted={highlightedSection === "education"}>
           {t("menu.education")}
-        </MenuElementLink>
-      </MenuElement>
-      <MenuElement isHighlighted={highlightedSection === "projects"}>
-        <MenuElementLink href="#projects">{t("menu.projects")}</MenuElementLink>
-      </MenuElement>
+        </MenuElement>
+      </MenuElementLink>
+      <MenuElementLink href="#projects">
+        <MenuElement isHighlighted={highlightedSection === "projects"}>
+          {t("menu.projects")}
+        </MenuElement>
+      </MenuElementLink>
     </MenuList>
   );
 };
