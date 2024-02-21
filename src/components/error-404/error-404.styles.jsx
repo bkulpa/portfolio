@@ -12,6 +12,10 @@ export const ErrorMessageContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+
+  &:hover {
+    color: rgb(94, 234, 212);
+  }
 `;
 
 export const ErrorCode = styled.h1`
