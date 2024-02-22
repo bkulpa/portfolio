@@ -43,5 +43,3 @@ export const MenuElementLink = styled.a`
   color: inherit;
   text-decoration: none;
 `;
-
-// export const MenuElementRefContainer = styled.div``;

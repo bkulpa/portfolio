@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import {
@@ -12,11 +13,13 @@ const Error404 = () => {
   const { t } = useTranslation();
   return (
     <ErrorContainer>
-      <ErrorMessageContainer>
-        <ErrorCode>404</ErrorCode>
-        <VerticalLine />
-        <ErrorMessage>{t("page.title.404")}</ErrorMessage>
-      </ErrorMessageContainer>
+      <NavLink to="/" style={{ textDecoration: "none", color: "inherit" }}>
+        <ErrorMessageContainer>
+          <ErrorCode>404</ErrorCode>
+          <VerticalLine />
+          <ErrorMessage>{t("page.title.404")}</ErrorMessage>
+        </ErrorMessageContainer>
+      </NavLink>
     </ErrorContainer>
   );
 };
