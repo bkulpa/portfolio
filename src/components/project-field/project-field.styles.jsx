@@ -28,6 +28,13 @@ export const GITHubLinkContainer = styled.div`
   top: -16px;
 `;
 
+export const ProjectArrowContainer = styled.div`
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  transition: transform 0.3s ease;
+`;
+
 export const ProjectDetailsContainer = styled.div`
   max-width: 392px;
 `;
@@ -71,6 +78,11 @@ export const ProjectFieldMainBox = styled.div`
   &:hover {
     background-color: #112240;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover ${ProjectArrowContainer} {
+    color: rgb(94, 234, 212);
+    transform: translate(5px, -5px);
   }
 `;
 
