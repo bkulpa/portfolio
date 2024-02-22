@@ -1,5 +1,15 @@
 import styled from "styled-components";
 
+export const ErrorArrowContainer = styled.div`
+  color: rgb(226, 232, 240);
+  font-weight: bold;
+  width: 16px;
+  height: 16px;
+  margin-left: 4px;
+  margin-top: 8px;
+  transition: transform 0.3s ease;
+`;
+
 export const ErrorContainer = styled.div`
   display: flex;
   align-items: center;
@@ -15,6 +25,11 @@ export const ErrorMessageContainer = styled.div`
 
   &:hover {
     color: rgb(94, 234, 212);
+  }
+
+  &:hover ${ErrorArrowContainer} {
+    color: rgb(94, 234, 212);
+    transform: translate(5px, -5px);
   }
 `;
 

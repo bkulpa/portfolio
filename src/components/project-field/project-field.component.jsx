@@ -8,7 +8,9 @@ import {
   ProjectDetailsContainer,
   ProjectFieldMainBox,
   ProjectLink,
+  ProjectArrowContainer,
 } from "./project-field.styles";
+import ArrowIcon from "../icons/icons/Arrow";
 
 const ProjectField = ({
   projectAltText,
@@ -32,10 +34,13 @@ const ProjectField = ({
       <ProjectLink href={projectUrl} target="_blank">
         <ProjectImage alt={t(projectAltText)} src={projectImg} />
         <ProjectDetailsContainer>
-          <div>
+          <div style={{ display: "flex" }}>
             <StyledH3 className={hoveredElementClassChange}>
               {t(projectTitle)}
             </StyledH3>
+            <ProjectArrowContainer>
+              <ArrowIcon />
+            </ProjectArrowContainer>
           </div>
           <ProjectFieldDescription>
             {t(projectDescription)}
