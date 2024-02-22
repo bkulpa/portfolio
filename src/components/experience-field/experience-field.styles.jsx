@@ -11,6 +11,7 @@ export const ArrowContainer = styled.div`
   width: 16px;
   height: 16px;
   margin-left: 4px;
+  transition: transform 0.3s ease;
 `;
 
 export const CVLink = styled.a`
@@ -37,6 +38,7 @@ export const CVLink = styled.a`
 
   &:hover ${ArrowContainer} {
     color: rgb(94, 234, 212);
+    transform: translate(5px, -5px);
   }
 `;
 
