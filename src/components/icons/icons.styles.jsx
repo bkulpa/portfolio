@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const IconContainer = styled.div`
   color: rgba(148, 163, 184, 255);
   height: 24px;
-  margin-right: 20px; // Rozłożenie elementów równomiernie na całej szerokości
+  margin-right: 20px;
   width: 24px;
 
   &:hover {

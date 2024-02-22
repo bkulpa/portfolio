@@ -12,8 +12,9 @@ import ExperienceSectionFinder from "../../functions/experience-section-finder";
 import ProjectsSectionFinder from "../../functions/projects-section-finder";
 
 import {
+  ArrowContainer,
   CVLink,
-  CVLinkContainer,
+  // CVLinkContainer,
 } from "../experience-field/experience-field.styles";
 import {
   IconsContainer,
@@ -27,6 +28,7 @@ import StyledH3 from "../styled-tags/styled-h3.styles";
 import IconGitHub from "../icons/icons/GitHub";
 import IconInstagram from "../icons/icons/Instagram";
 import IconLinkedin from "../icons/icons/Linkedin";
+import ArrowIcon from "../icons/icons/Arrow";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -102,11 +104,14 @@ const Home = () => {
               jobTech={"home.experienceField.jobTech-3"}
             />
           </div>
-          <CVLinkContainer>
+          <div style={{ display: "flex" }}>
             <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
               {t("home.experienceField.resume")}
+              <ArrowContainer>
+                <ArrowIcon />
+              </ArrowContainer>
             </CVLink>
-          </CVLinkContainer>
+          </div>
           <div id="education" ref={findEducationSection}>
             <ExperienceField
               jobDate={"home.educationField.educationDate-1"}

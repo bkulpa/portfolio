@@ -12,7 +12,6 @@ export const SplitContainer = styled.div`
 export const LeftContainer = styled.div`
   flex: 0 0 528px;
   min-width: 329.5px;
-  /* padding: 96px 0; */
   position: sticky;
   top: 0;
   height: 100vh;
