@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import ArrowIcon from "../icons/icons/Arrow";
 
 import {
+  ErrorArrowContainer,
   ErrorCode,
   ErrorContainer,
   ErrorMessage,
@@ -17,7 +19,12 @@ const Error404 = () => {
         <ErrorMessageContainer>
           <ErrorCode>404</ErrorCode>
           <VerticalLine />
-          <ErrorMessage>{t("page.title.404")}</ErrorMessage>
+          <div style={{ display: "flex" }}>
+            <ErrorMessage>{t("page.title.404")}</ErrorMessage>
+            <ErrorArrowContainer>
+              <ArrowIcon />
+            </ErrorArrowContainer>
+          </div>
         </ErrorMessageContainer>
       </NavLink>
     </ErrorContainer>
