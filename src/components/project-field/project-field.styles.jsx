@@ -29,9 +29,12 @@ export const GITHubLinkContainer = styled.div`
 `;
 
 export const ProjectArrowContainer = styled.div`
+  color: rgb(226, 232, 240);
+  font-weight: bold;
   width: 16px;
   height: 16px;
   margin-left: 4px;
+  margin-top: 16px;
   transition: transform 0.3s ease;
 `;
 
