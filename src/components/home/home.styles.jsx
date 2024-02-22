@@ -12,9 +12,10 @@ export const SplitContainer = styled.div`
 export const LeftContainer = styled.div`
   flex: 0 0 528px;
   min-width: 329.5px;
-  padding: 96px 0;
+  /* padding: 96px 0; */
   position: sticky;
   top: 0;
+  height: 100vh;
 `;
 
 export const RightContainer = styled.div`
@@ -29,4 +30,13 @@ export const RightContainer = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
+`;
+
+export const IconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  padding: 10px 0;
+  position: absolute;
+  margin-bottom: 50px;
 `;

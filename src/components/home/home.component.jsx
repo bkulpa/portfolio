@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import { AboutField } from "../experience-field/experience-field.styles";
+import Icon from "../icons/icons.component";
 import ExperienceField from "../experience-field/experience-field.component";
 import Header from "../header/header.component";
 import ProjectField from "../project-field/project-field.component";
@@ -14,9 +15,18 @@ import {
   CVLink,
   CVLinkContainer,
 } from "../experience-field/experience-field.styles";
-import { LeftContainer, RightContainer, SplitContainer } from "./home.styles";
+import {
+  IconsContainer,
+  LeftContainer,
+  RightContainer,
+  SplitContainer,
+} from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
 import StyledH3 from "../styled-tags/styled-h3.styles";
+
+import IconGitHub from "../icons/icons/GitHub";
+import IconInstagram from "../icons/icons/Instagram";
+import IconLinkedin from "../icons/icons/Linkedin";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -32,13 +42,13 @@ const Home = () => {
 
   return (
     <>
-      <StyledH3>
+      {/* <StyledH3>
         PAGE UNDER DEVELOPMENT...
         <br />
         CSS FOR MOBILE DEVICES WILL BE ADDED SOON,
         <br />
         CONTACT DETAILS AND OTHER MINOR CHANGES WILL BE ADDED SOON
-      </StyledH3>
+      </StyledH3> */}
       <SplitContainer>
         <LeftContainer>
           <Header />
@@ -47,6 +57,17 @@ const Home = () => {
             alt=""
             style={{ display: "none" }}
           />
+          <IconsContainer>
+            <Icon iconLink="https://github.com/bkulpa" iconSVG={IconGitHub} />
+            <Icon
+              iconLink="https://www.linkedin.com/in/bartosz-kulpa/"
+              iconSVG={IconLinkedin}
+            />
+            <Icon
+              iconLink="https://www.instagram.com/kul_pus/"
+              iconSVG={IconInstagram}
+            />
+          </IconsContainer>
         </LeftContainer>
         <RightContainer id="scrollContainer">
           <AboutField id="about">

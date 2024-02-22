@@ -8,14 +8,14 @@ import StyledP from "../styled-tags/styled-p.styles";
 const Header = () => {
   const { t } = useTranslation();
   return (
-    <>
+    <div style={{ marginTop: "100px" }}>
       <StyledH1>{t("home.nameAndSurname")}</StyledH1>
       <StyledH2>{t("home.jobTitle")}</StyledH2>
       <div style={{ maxWidth: "320px", marginTop: "16px" }}>
         <StyledP>{t("home.jobTitleDescription")}</StyledP>
       </div>
       <Menu />
-    </>
+    </div>
   );
 };
 
