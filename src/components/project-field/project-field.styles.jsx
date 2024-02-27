@@ -83,10 +83,12 @@ export const ProjectFieldMainBox = styled.div`
   }
 
   @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-start;
+
     &:hover {
       background-color: transparent;
       box-shadow: none;
-      color: rgb(94, 234, 212);
     }
     font-size: 10px;
     &:hover ${ProjectArrowContainer} {
@@ -101,4 +103,9 @@ export const ProjectLink = styled.a`
   justify-content: space-between;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
