@@ -42,6 +42,10 @@ export const CVLink = styled.a`
     color: rgb(94, 234, 212);
     transform: translate(5px, -5px);
   }
+
+  @media (max-width: ${mobileBreakpoint}) {
+    margin-bottom: 64px;
+  }
 `;
 
 export const ExperienceFieldMainBox = styled.div`
@@ -69,6 +73,9 @@ export const ExperienceFieldMainBox = styled.div`
   }
 
   @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column; /* Zmienia układ z poziomego na pionowy */
+    align-items: flex-start; /* Dostosowuje elementy do lewej strony kontenera */
+
     &:hover {
       background-color: transparent;
       box-shadow: none;
