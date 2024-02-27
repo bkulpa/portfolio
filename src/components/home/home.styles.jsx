@@ -51,12 +51,9 @@ export const RightContainer = styled.div`
   }
 
   @media (max-width: ${mobileBreakpoint}) {
-    /* max-width: calc(100% - 20px); */
     min-width: auto;
     flex: 1 1 auto;
     margin: 0 auto;
-    /* padding-left: 10px;
-    padding-right: 10px; */
   }
 `;
 
@@ -71,6 +68,5 @@ export const IconsContainer = styled.div`
   @media (max-width: ${mobileBreakpoint}) {
     position: static;
     margin-bottom: 0;
-    /* padding-left: 2px; */
   }
 `;
