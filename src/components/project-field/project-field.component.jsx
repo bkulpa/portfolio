@@ -23,7 +23,7 @@ const ProjectField = ({
   const [isHovered, setIsHovered] = useState(false);
 
   const hoveredElementClassChange = `hovered__element ${
-    isHovered ? "on-hover" : ""
+    isHovered ? "on-hover-project" : ""
   }`;
 
   return (

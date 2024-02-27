@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
+
 export const GITHubLink = styled.a`
   color: rgb(226, 232, 240);
   font-size: 16px;
@@ -9,23 +11,25 @@ export const GITHubLink = styled.a`
   &:hover {
     color: rgb(94, 234, 212);
   }
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 14px;
+    &:hover {
+      color: inherit;
+    }
+  }
 `;
 
 export const GITHubLinkContainer = styled.div`
   align-items: baseline;
-  bottom: -16px;
   color: rgb(100, 116, 139);
   display: flex;
   font-size: 12px;
   font-weight: bold;
   justify-content: space-between;
-  left: -24px;
   margin-bottom: 44px;
   max-width: 576px;
   padding: 16px;
-  right: -24px;
-  text-align: left;
-  top: -16px;
 `;
 
 export const ProjectArrowContainer = styled.div`
@@ -61,19 +65,14 @@ export const ProjectImage = styled.img`
 
 export const ProjectFieldMainBox = styled.div`
   align-items: baseline;
-  bottom: -16px;
   color: rgb(100, 116, 139);
   display: flex;
   font-size: 12px;
   font-weight: bold;
   justify-content: space-between;
-  left: -24px;
   margin-bottom: 48px;
   max-width: 576px;
   padding: 16px;
-  right: -24px;
-  text-align: left;
-  top: -16px;
 
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
@@ -83,9 +82,16 @@ export const ProjectFieldMainBox = styled.div`
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  &:hover ${ProjectArrowContainer} {
-    color: rgb(94, 234, 212);
-    transform: translate(5px, -5px);
+  @media (max-width: ${mobileBreakpoint}) {
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+      color: rgb(94, 234, 212);
+    }
+    font-size: 10px;
+    &:hover ${ProjectArrowContainer} {
+      color: rgb(94, 234, 212);
+    }
   }
 `;
 
