@@ -37,3 +37,9 @@ body::-webkit-scrollbar {
 .hovered__element.on-hover {
   color: rgb(94, 234, 212);
 }
+
+@media (max-width: 768px) {
+  .hovered__element.on-hover {
+    color: rgb(215, 223, 238);
+  }
+}

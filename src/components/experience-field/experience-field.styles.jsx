@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
+
 export const AboutField = styled.div`
   margin-bottom: 144px;
   max-width: 528px;
@@ -64,6 +66,14 @@ export const ExperienceFieldMainBox = styled.div`
   &:hover {
     background-color: #112240;
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: ${mobileBreakpoint}) {
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+    font-size: 10px;
   }
 `;
 

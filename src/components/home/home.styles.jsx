@@ -34,8 +34,6 @@ export const LeftContainer = styled.div`
     min-width: auto;
     width: calc(100% - 20px);
     margin: 0 auto;
-    /* padding-left: 10px;
-    padding-right: 10px; */
   }
 `;
 
@@ -73,6 +71,6 @@ export const IconsContainer = styled.div`
   @media (max-width: ${mobileBreakpoint}) {
     position: static;
     margin-bottom: 0;
-    padding-left: 2px;
+    /* padding-left: 2px; */
   }
 `;
