@@ -61,6 +61,12 @@ export const ProjectImage = styled.img`
   margin-top: 19px;
   border-radius: 8px;
   width: 111px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    height: 115px;
+    width: 200px;
+    margin-bottom: 20px;
+  }
 `;
 
 export const ProjectFieldMainBox = styled.div`
