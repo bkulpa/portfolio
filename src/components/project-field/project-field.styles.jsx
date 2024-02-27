@@ -88,6 +88,11 @@ export const ProjectFieldMainBox = styled.div`
     box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
   }
 
+  &:hover ${ProjectArrowContainer} {
+    color: rgb(94, 234, 212);
+    transform: translate(5px, -5px);
+  }
+
   @media (max-width: ${mobileBreakpoint}) {
     flex-direction: column;
     align-items: flex-start;
@@ -96,10 +101,8 @@ export const ProjectFieldMainBox = styled.div`
       background-color: transparent;
       box-shadow: none;
     }
+
     font-size: 10px;
-    &:hover ${ProjectArrowContainer} {
-      color: rgb(94, 234, 212);
-    }
   }
 `;
 

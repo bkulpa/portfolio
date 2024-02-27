@@ -27,6 +27,7 @@ import IconGitHub from "../icons/icons/GitHub";
 import IconInstagram from "../icons/icons/Instagram";
 import IconLinkedin from "../icons/icons/Linkedin";
 import ArrowIcon from "../icons/icons/Arrow";
+import { MobileStyledH3 } from "../styled-tags/styled-h3.styles";
 
 const Home = () => {
   const { t } = useTranslation();
@@ -59,6 +60,7 @@ const Home = () => {
       </LeftContainer>
       <RightContainer id="scrollContainer">
         <AboutField id="about">
+          <MobileStyledH3>{t("menu.about")}</MobileStyledH3>
           <StyledP
             ref={findAboutSection}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
@@ -66,11 +68,15 @@ const Home = () => {
           <StyledP
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-2")}
           />
+
           <StyledP
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>
         <div id="experience" ref={findExperienceSection}>
+          <MobileStyledH3 style={{ marginLeft: "15px" }}>
+            {t("menu.experience")}
+          </MobileStyledH3>
           <ExperienceField
             jobDate={"home.experienceField.jobDate-1"}
             jobDescription={"home.experienceField.jobDescription-1"}
@@ -99,6 +105,9 @@ const Home = () => {
           </CVLink>
         </div>
         <div id="education" ref={findEducationSection}>
+          <MobileStyledH3 style={{ marginLeft: "15px" }}>
+            {t("menu.education")}
+          </MobileStyledH3>
           <ExperienceField
             jobDate={"home.educationField.educationDate-1"}
             jobDescription={"home.educationField.educationDescription-1"}
@@ -125,6 +134,9 @@ const Home = () => {
           />
         </div>
         <div id="projects" ref={findProjectsSection}>
+          <MobileStyledH3 style={{ marginLeft: "15px" }}>
+            {t("menu.projects")}
+          </MobileStyledH3>
           <ProjectField
             projectAltText={"home.projectField.projectAltText-1"}
             projectDescription={"home.projectField.projectDescription-1"}

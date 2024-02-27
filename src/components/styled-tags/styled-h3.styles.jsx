@@ -13,4 +13,17 @@ const StyledH3 = styled.h3`
   }
 `;
 
+export const MobileStyledH3 = styled.h3`
+  display: none;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    display: block;
+    color: rgb(226, 232, 240);
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    /* padding-left: 15px; */
+  }
+`;
+
 export default StyledH3;
