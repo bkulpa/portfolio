@@ -66,6 +66,7 @@ export const ProjectImage = styled.img`
     height: 115px;
     width: 200px;
     margin-bottom: 20px;
+    margin-left: -3px;
   }
 `;
 
