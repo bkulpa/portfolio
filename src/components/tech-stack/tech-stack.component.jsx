@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
 const Technology = styled.div`
   align-items: center;
   background-color: rgba(45, 212, 191, 0.1);
@@ -14,8 +15,14 @@ const Technology = styled.div`
   margin-bottom: 10px;
   margin-right: 12px;
   padding: 8px 16px;
-`;
 
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 12px;
+    padding: 6px 12px;
+    margin-bottom: 8px;
+    margin-right: 10px;
+  }
+`;
 const TechStackContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -27,9 +34,7 @@ const TechStack = ({ technologies }) => {
   return (
     <TechStackContainer>
       {techList.map((tech, index) => (
-        // <div>
         <Technology key={index}>{tech}</Technology>
-        // </div>
       ))}
     </TechStackContainer>
   );

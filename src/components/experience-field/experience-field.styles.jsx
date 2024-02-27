@@ -45,6 +45,7 @@ export const CVLink = styled.a`
 
   @media (max-width: ${mobileBreakpoint}) {
     margin-bottom: 64px;
+    font-size: 14px;
   }
 `;
 
@@ -73,8 +74,8 @@ export const ExperienceFieldMainBox = styled.div`
   }
 
   @media (max-width: ${mobileBreakpoint}) {
-    flex-direction: column; /* Zmienia układ z poziomego na pionowy */
-    align-items: flex-start; /* Dostosowuje elementy do lewej strony kontenera */
+    flex-direction: column;
+    align-items: flex-start;
 
     &:hover {
       background-color: transparent;
@@ -90,6 +91,10 @@ export const ExperienceFieldDescription = styled.div`
   line-height: 21px;
   margin-bottom: 16px;
   margin-top: 8px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 12px;
+  }
 `;
 
 export const ExperienceDetailsContainer = styled.div`
