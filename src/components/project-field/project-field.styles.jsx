@@ -70,6 +70,17 @@ export const ProjectImage = styled.img`
   }
 `;
 
+export const ProjectStyledH3 = styled.h3`
+  color: rgb(226, 232, 240);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 14px;
+  }
+`;
+
 export const ProjectFieldMainBox = styled.div`
   align-items: baseline;
   color: rgb(100, 116, 139);
@@ -92,6 +103,10 @@ export const ProjectFieldMainBox = styled.div`
   &:hover ${ProjectArrowContainer} {
     color: rgb(94, 234, 212);
     transform: translate(5px, -5px);
+  }
+
+  &:hover ${ProjectStyledH3} {
+    color: rgb(94, 234, 212);
   }
 
   @media (max-width: ${mobileBreakpoint}) {

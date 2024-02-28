@@ -1,7 +1,5 @@
-import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import StyledH3 from "../styled-tags/styled-h3.styles";
 import {
   ProjectImage,
   ProjectFieldDescription,
@@ -9,6 +7,7 @@ import {
   ProjectFieldMainBox,
   ProjectLink,
   ProjectArrowContainer,
+  ProjectStyledH3,
 } from "./project-field.styles";
 import ArrowIcon from "../icons/icons/Arrow";
 
@@ -20,24 +19,14 @@ const ProjectField = ({
   projectUrl,
 }) => {
   const { t } = useTranslation();
-  const [isHovered, setIsHovered] = useState(false);
-
-  const hoveredElementClassChange = `hovered__element ${
-    isHovered ? "on-hover" : ""
-  }`;
 
   return (
-    <ProjectFieldMainBox
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <ProjectFieldMainBox>
       <ProjectLink href={projectUrl} target="_blank">
         <ProjectImage alt={t(projectAltText)} src={projectImg} />
         <ProjectDetailsContainer>
           <div style={{ display: "flex" }}>
-            <StyledH3 className={hoveredElementClassChange}>
-              {t(projectTitle)}
-            </StyledH3>
+            <ProjectStyledH3>{t(projectTitle)}</ProjectStyledH3>
             <ProjectArrowContainer>
               <ArrowIcon />
             </ProjectArrowContainer>
