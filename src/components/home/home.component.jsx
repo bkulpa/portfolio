@@ -23,10 +23,10 @@ import {
 } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
 
+import ArrowIcon from "../icons/icons/Arrow";
 import IconGitHub from "../icons/icons/GitHub";
 import IconInstagram from "../icons/icons/Instagram";
 import IconLinkedin from "../icons/icons/Linkedin";
-import ArrowIcon from "../icons/icons/Arrow";
 import { MobileStyledH3 } from "../styled-tags/styled-h3.styles";
 
 const Home = () => {

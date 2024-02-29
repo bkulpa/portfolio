@@ -13,11 +13,12 @@ export const ArrowContainer = styled.div`
   width: 16px;
   height: 16px;
   margin-left: 4px;
+  margin-top: -6px;
   transition: transform 0.3s ease;
 `;
 
 export const CVLink = styled.a`
-  align-items: baseline;
+  align-items: justify-content;
   bottom: -16px;
   color: rgb(100, 116, 139);
   display: flex;
