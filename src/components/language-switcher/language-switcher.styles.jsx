@@ -41,8 +41,9 @@ export const LanguageFieldMainBox = styled.div`
   }
 
   @media (max-width: ${mobileBreakpoint}) {
-    flex-direction: column;
-    align-items: flex-start;
+    /* flex-direction: column;
+    align-items: flex-start; */
     font-size: 10px;
+    margin-bottom: 30px;
   }
 `;
