@@ -6,10 +6,12 @@ import ExperienceField from "../experience-field/experience-field.component";
 import Header from "../header/header.component";
 import ProjectField from "../project-field/project-field.component";
 
-import AboutSectionFinder from "../../functions/about-section-finder";
-import EducationSectionFinder from "../../functions/education-section-finder";
-import ExperienceSectionFinder from "../../functions/experience-section-finder";
-import ProjectsSectionFinder from "../../functions/projects-section-finder";
+import { useFindVisibility } from "../../hooks/about-section-finder";
+
+import { setAboutVisibility } from "../../store/visibility/aboutVisibilitySlice";
+import { setEducationVisibility } from "../../store/visibility/educationVisibilitySlice";
+import { setExperienceVisibility } from "../../store/visibility/experienceVisibilitySlice";
+import { setProjectsVisibility } from "../../store/visibility/projectsVisibilitySlice";
 
 import {
   ArrowContainer,
@@ -32,10 +34,10 @@ import { MobileStyledH3 } from "../styled-tags/styled-h3.styles";
 const Home = () => {
   const { t } = useTranslation();
 
-  const findAboutSection = AboutSectionFinder();
-  const findEducationSection = EducationSectionFinder();
-  const findExperienceSection = ExperienceSectionFinder();
-  const findProjectsSection = ProjectsSectionFinder();
+  const aboutSectionRef = useFindVisibility(setAboutVisibility);
+  const educationSectionRef = useFindVisibility(setEducationVisibility);
+  const experienceSectionRef = useFindVisibility(setExperienceVisibility);
+  const projectsSectionRef = useFindVisibility(setProjectsVisibility);
 
   const setInnerHTML = (translation) => {
     return { __html: t(translation) };
@@ -62,7 +64,7 @@ const Home = () => {
         <AboutField id="about">
           <MobileStyledH3>{t("menu.about")}</MobileStyledH3>
           <StyledP
-            ref={findAboutSection}
+            ref={aboutSectionRef}
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-1")}
           />
           <StyledP
@@ -73,7 +75,7 @@ const Home = () => {
             dangerouslySetInnerHTML={setInnerHTML("home.aboutMe.part-3")}
           />
         </AboutField>
-        <div id="experience" ref={findExperienceSection}>
+        <div id="experience" ref={experienceSectionRef}>
           <MobileStyledH3 style={{ marginLeft: "15px" }}>
             {t("menu.experience")}
           </MobileStyledH3>
@@ -104,7 +106,7 @@ const Home = () => {
             </ArrowContainer>
           </CVLink>
         </div>
-        <div id="education" ref={findEducationSection}>
+        <div id="education" ref={educationSectionRef}>
           <MobileStyledH3 style={{ marginLeft: "15px" }}>
             {t("menu.education")}
           </MobileStyledH3>
@@ -133,7 +135,7 @@ const Home = () => {
             jobTech={"home.educationField.educationTech-4"}
           />
         </div>
-        <div id="projects" ref={findProjectsSection}>
+        <div id="projects" ref={projectsSectionRef}>
           <MobileStyledH3 style={{ marginLeft: "15px" }}>
             {t("menu.projects")}
           </MobileStyledH3>
