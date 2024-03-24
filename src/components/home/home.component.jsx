@@ -6,7 +6,7 @@ import ExperienceField from "../experience-field/experience-field.component";
 import Header from "../header/header.component";
 import ProjectField from "../project-field/project-field.component";
 
-import { useFindVisibility } from "../../hooks/about-section-finder";
+import { useFindVisibility } from "../../hooks/find-visibility";
 
 import { setAboutVisibility } from "../../store/visibility/aboutVisibilitySlice";
 import { setEducationVisibility } from "../../store/visibility/educationVisibilitySlice";
