@@ -99,7 +99,11 @@ const Home = () => {
           />
         </div>
         <div style={{ display: "flex" }}>
-          <CVLink href="resume.pdf" target="_blank" rel="noopener noreferrer">
+          <CVLink
+            href="CV - Bartosz Kulpa.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {t("home.experienceField.resume")}
             <ArrowContainer>
               <ArrowIcon />
