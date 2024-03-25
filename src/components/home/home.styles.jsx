@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
+
 export const SplitContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -7,6 +9,15 @@ export const SplitContainer = styled.div`
   margin: 0 auto;
   max-width: 1088px;
   min-width: 1024px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    max-width: calc(100% - 20px);
+    min-width: auto;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 `;
 
 export const LeftContainer = styled.div`
@@ -15,6 +26,15 @@ export const LeftContainer = styled.div`
   position: sticky;
   top: 0;
   height: 100vh;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    position: static;
+    height: auto;
+    flex: 1 1 auto;
+    min-width: auto;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+  }
 `;
 
 export const RightContainer = styled.div`
@@ -29,6 +49,12 @@ export const RightContainer = styled.div`
   ::-webkit-scrollbar {
     display: none;
   }
+
+  @media (max-width: ${mobileBreakpoint}) {
+    min-width: auto;
+    flex: 1 1 auto;
+    margin: 0 auto;
+  }
 `;
 
 export const IconsContainer = styled.div`
@@ -38,4 +64,9 @@ export const IconsContainer = styled.div`
   padding: 10px 0;
   position: absolute;
   margin-bottom: 50px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    position: static;
+    margin-bottom: 0;
+  }
 `;

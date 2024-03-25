@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+const mobileBreakpoint = "768px";
+
 export const GITHubLink = styled.a`
   color: rgb(226, 232, 240);
   font-size: 16px;
@@ -9,23 +11,25 @@ export const GITHubLink = styled.a`
   &:hover {
     color: rgb(94, 234, 212);
   }
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 14px;
+    &:hover {
+      color: inherit;
+    }
+  }
 `;
 
 export const GITHubLinkContainer = styled.div`
   align-items: baseline;
-  bottom: -16px;
   color: rgb(100, 116, 139);
   display: flex;
   font-size: 12px;
   font-weight: bold;
   justify-content: space-between;
-  left: -24px;
   margin-bottom: 44px;
   max-width: 576px;
   padding: 16px;
-  right: -24px;
-  text-align: left;
-  top: -16px;
 `;
 
 export const ProjectArrowContainer = styled.div`
@@ -57,23 +61,36 @@ export const ProjectImage = styled.img`
   margin-top: 19px;
   border-radius: 8px;
   width: 111px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    height: 115px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: -3px;
+  }
+`;
+
+export const ProjectStyledH3 = styled.h3`
+  color: rgb(226, 232, 240);
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 22px;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    font-size: 14px;
+  }
 `;
 
 export const ProjectFieldMainBox = styled.div`
   align-items: baseline;
-  bottom: -16px;
   color: rgb(100, 116, 139);
   display: flex;
   font-size: 12px;
   font-weight: bold;
   justify-content: space-between;
-  left: -24px;
   margin-bottom: 48px;
   max-width: 576px;
   padding: 16px;
-  right: -24px;
-  text-align: left;
-  top: -16px;
 
   border-radius: 10px;
   transition: box-shadow 0.3s ease;
@@ -87,6 +104,22 @@ export const ProjectFieldMainBox = styled.div`
     color: rgb(94, 234, 212);
     transform: translate(5px, -5px);
   }
+
+  &:hover ${ProjectStyledH3} {
+    color: rgb(94, 234, 212);
+  }
+
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-start;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+
+    font-size: 10px;
+  }
 `;
 
 export const ProjectLink = styled.a`
@@ -95,4 +128,9 @@ export const ProjectLink = styled.a`
   justify-content: space-between;
   text-decoration: none;
   color: inherit;
+
+  @media (max-width: ${mobileBreakpoint}) {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;

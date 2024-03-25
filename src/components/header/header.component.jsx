@@ -4,6 +4,7 @@ import Menu from "../menu/menu.component";
 import StyledH1 from "../styled-tags/styled-h1.styles";
 import StyledH2 from "../styled-tags/styled-h2.styles";
 import StyledP from "../styled-tags/styled-p.styles";
+import LanguageSwitcher from "../language-switcher/language-switcher.component";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -14,6 +15,7 @@ const Header = () => {
       <div style={{ maxWidth: "320px", marginTop: "16px" }}>
         <StyledP>{t("home.jobTitleDescription")}</StyledP>
       </div>
+      <LanguageSwitcher />
       <Menu />
     </div>
   );

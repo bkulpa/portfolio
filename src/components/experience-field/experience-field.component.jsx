@@ -24,11 +24,7 @@ const ExperienceField = ({ jobDate, jobDescription, jobTech, jobTitle }) => {
     >
       <span>{t(jobDate)}</span>
       <ExperienceDetailsContainer>
-        <div>
-          <StyledH3 className={hoveredElementClassChange}>
-            {t(jobTitle)}
-          </StyledH3>
-        </div>
+        <StyledH3 className={hoveredElementClassChange}>{t(jobTitle)}</StyledH3>
         <ExperienceFieldDescription>
           {t(jobDescription)}
         </ExperienceFieldDescription>
