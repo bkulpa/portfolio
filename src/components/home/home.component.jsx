@@ -4,7 +4,7 @@ import { AboutField } from "../experience-field/experience-field.styles";
 import Icon from "../icons/icons.component";
 import ExperienceField from "../experience-field/experience-field.component";
 import Header from "../header/header.component";
-import ProjectField from "../project-field/project-field.component";
+// import ProjectField from "../project-field/project-field.component";
 
 import { useFindVisibility } from "../../hooks/find-visibility";
 
@@ -143,7 +143,7 @@ const Home = () => {
           <MobileStyledH3 style={{ marginLeft: "15px" }}>
             {t("menu.projects")}
           </MobileStyledH3>
-          <ProjectField
+          {/* <ProjectField
             projectAltText={"home.projectField.projectAltText-1"}
             projectDescription={"home.projectField.projectDescription-1"}
             projectImg={"projects-images/crwn-shop.png"}
@@ -170,7 +170,7 @@ const Home = () => {
             projectImg={"projects-images/cahee.png"}
             projectTitle={"home.projectField.projectTitle-4"}
             projectUrl={"https://bkulpa-cahee.netlify.app/"}
-          />
+          /> */}
         </div>
       </RightContainer>
     </SplitContainer>

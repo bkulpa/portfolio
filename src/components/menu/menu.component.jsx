@@ -45,11 +45,11 @@ const Menu = () => {
           {t("menu.education")}
         </MenuElement>
       </MenuElementLink>
-      <MenuElementLink href="#projects">
+      {/* <MenuElementLink href="#projects">
         <MenuElement isHighlighted={highlightedSection === "projects"}>
           {t("menu.projects")}
         </MenuElement>
-      </MenuElementLink>
+      </MenuElementLink> */}
     </MenuList>
   );
 };
