@@ -98,7 +98,7 @@ const Home = () => {
             jobTech={"home.experienceField.jobTech-3"}
           />
         </div>
-        <div style={{ display: "flex" }}>
+        {/* <div style={{ display: "flex" }}>
           <CVLink
             href="CV - Bartosz Kulpa.pdf"
             target="_blank"
@@ -109,7 +109,7 @@ const Home = () => {
               <ArrowIcon />
             </ArrowContainer>
           </CVLink>
-        </div>
+        </div> */}
         <div id="education" ref={educationSectionRef}>
           <MobileStyledH3 style={{ marginLeft: "15px" }}>
             {t("menu.education")}

@@ -28,7 +28,7 @@ export const CVLink = styled.a`
   left: -24px;
   margin-bottom: 44px;
   max-width: 576px;
-  margin: 16px;
+  /* margin: 16px; */
   right: -24px;
   text-align: left;
   top: -16px;
