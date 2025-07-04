@@ -13,7 +13,9 @@ export const useFindVisibility = (action, threshold = 0.1) => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    if (visibilityRef.current) {
+    const element = visibilityRef.current;
+
+    if (element) {
       const observer = new IntersectionObserver(
         ([entry]) => {
           dispatch(action(entry.isIntersecting));
@@ -21,8 +23,9 @@ export const useFindVisibility = (action, threshold = 0.1) => {
         { threshold }
       );
 
-      observer.observe(visibilityRef.current);
-      return () => observer.unobserve(visibilityRef.current);
+      observer.observe(element);
+
+      return () => observer.unobserve(element);
     }
   }, [action, dispatch, threshold]);
 
