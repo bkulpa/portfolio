@@ -14,10 +14,6 @@ import { setExperienceVisibility } from "../../store/visibility/experienceVisibi
 import { setProjectsVisibility } from "../../store/visibility/projectsVisibilitySlice";
 
 import {
-  ArrowContainer,
-  CVLink,
-} from "../experience-field/experience-field.styles";
-import {
   IconsContainer,
   LeftContainer,
   RightContainer,
@@ -25,7 +21,6 @@ import {
 } from "./home.styles";
 import StyledP from "../styled-tags/styled-p.styles";
 
-import ArrowIcon from "../icons/icons/Arrow";
 import IconGitHub from "../icons/icons/GitHub";
 import IconInstagram from "../icons/icons/Instagram";
 import IconLinkedin from "../icons/icons/Linkedin";
