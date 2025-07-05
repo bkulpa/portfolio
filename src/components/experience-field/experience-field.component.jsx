@@ -25,7 +25,7 @@ const ExperienceField = ({ jobDate, jobDescription, jobTech, jobTitle }) => {
       <span>{t(jobDate)}</span>
       <ExperienceDetailsContainer>
         <StyledH3 className={hoveredElementClassChange}>{t(jobTitle)}</StyledH3>
-        <ExperienceFieldDescription>
+        <ExperienceFieldDescription style={{ whiteSpace: "pre-line" }}>
           {t(jobDescription)}
         </ExperienceFieldDescription>
         <TechStack technologies={t(jobTech)} />
